@@ -1,0 +1,26 @@
+{
+  "name": "dev-frontend",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "kilowat <kadantsev.sergey@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "slick-carousel": "^1.6.0",
+    "jquery": "^2.2.0",
+    "fullpage.js": "fullpage#^2.8.2",
+    "susy": "^2.2.12",
+    "breakpoint-sass": "^2.7.0",
+    "bourbon": "^4.2.7",
+    "bootstrap-sass": "^3.3.7"
+  }
+}

@@ -1,0 +1,12 @@
+{
+	"conf": {
+		"host": "dev.bitrix",
+		"user": "ftp",
+		"password": "ftp",
+		"parallel": "10"
+	},
+	"files": [
+		"app/**/*.*"
+	],
+	"pathToServer":"/serv/public_html"
+}

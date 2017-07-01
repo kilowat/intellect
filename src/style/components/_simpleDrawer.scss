@@ -1,0 +1,58 @@
+#simpleDrawer {
+  background: #fff none repeat scroll 0 0;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  z-index: 101;
+    padding-top: 15px;
+}
+
+#simpleDrawer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#simpleDrawer ul li a {
+  border-bottom: 1px solid;
+  color: black;
+  display: block;
+  padding-bottom: 7px;
+  padding-top: 7px;
+  text-decoration: none;
+  padding-left: 15px;
+
+}
+#simpleDrawer ul li a:hover, #simpleDrawer ul li a:active{
+  background-color: #ccc;
+}
+.drawer-hamburger {
+  top: 0px;
+  margin-top: 15px;
+  cursor: pointer;
+  left: 15px;
+  position: fixed;
+  background-image: url(../images/ic_open.png);
+  z-index: 100;
+}
+
+.drawer-close,
+.drawer-hamburger {
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+}
+
+.drawer-close {
+  background-image: url(../images/ic_close.png);
+}
+
+#drawer-overlay {
+  background-image: url(../images/overlay.png);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index:2;
+}

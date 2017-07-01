@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+  <title>{{ title }}</title>
+  <!-- libs:css -->
+  <link rel="stylesheet" href="./libs/fancybox/css/jquery.fancybox.css">
+  <!-- endinject -->
+  <!-- dev:css -->
+  <link rel="stylesheet" href="./css/screen.css">
+  <!-- endinject -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <header>
+	{% include '../layouts/header.html' %}
+  </header>
+  <main>
+	{% block content %}{% endblock %}
+  </main>
+  <footer>
+    {% include '../layouts/footer.html' %}
+  </footer>
+  <script src="./libs/jquery/js/jquery.min.js"></script>
+  <!--libs:js-->
+
+  <script src="./libs/fancybox/js/jquery.fancybox.pack.js"></script>
+
+  <!--endinject-->
+  <!--dev:js-->
+
+  <script src="./js/all.js"></script>
+
+  <!--endinject-->
+</body>
+
+
+</html>

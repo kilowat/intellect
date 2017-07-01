@@ -1,0 +1,113 @@
+{
+	"bootstrap": {
+		"js": [
+			"bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"
+		],
+		"scss": [
+			"bower_components/bootstrap-sass/assets/stylesheets/**/*.*"
+		],
+		"css": [
+			"src/libs/bootstrap/css/**/*.*"
+		],
+		"fonts": ["bower_components/bootstrap-sass/assets/fonts/bootstrap/*.*"]
+	},
+	"jquery": {
+		"js": [
+			"bower_components/jquery/dist/jquery.min.js"
+		]
+	},
+	"fancybox": {
+		"js": [
+			"src/libs/fancybox/js/jquery.fancybox.pack.js"
+		],
+		"css": [
+			"src/libs/fancybox/css/jquery.fancybox.css"
+		],
+		"images": [
+			"src/libs/fancybox/images/blank.gif",
+			"src/libs/fancybox/images/fancybox_loading.gif",
+			"src/libs/fancybox/images/fancybox_loading@2x.gif",
+			"src/libs/fancybox/images/fancybox_overlay.png",
+			"src/libs/fancybox/images/fancybox_sprite.png",
+			"src/libs/fancybox/images/fancybox_sprite@2x.png"
+		]
+	},
+	"slick": {
+		"js": [
+			"bower_components/slick-carousel/slick/slick.min.js"
+		],
+		"css": [
+			"bower_components/slick-carousel/slick/slick.css"
+		],
+		"images": [
+			"bower_components/slick-carousel/slick/ajax-loader.gif"
+		]
+	},
+	"select": {
+		"js": [
+			"src/libs/select/js/selectize.min.js"
+		]
+	},
+	"fullpage": {
+		"js": [
+			"bower_components/fullpage.js/dist/jquery.fullpage.min.js"
+		],
+		"css": [
+			"bower_components/fullpage.js/dist/jquery.fullpage.min.css"
+		]
+	},
+	"susy": {
+		"scss": [
+			"bower_components/susy/sass/**/*.*"
+		]
+	},
+	"breakpoint": {
+		"scss": [
+			"bower_components/breakpoint-sass/stylesheets/**/*.*"
+		]
+	},
+	"bourbon": {
+		"scss": [
+			"bower_components/bourbon/app/assets/stylesheets/**/*.*"
+		]
+	},
+	"drawer": {
+		"js": [
+			"src/libs/drawer/js/simpleDrawer.js"
+		],
+		"images": [
+			"src/libs/drawer/images/*"
+		]
+	},
+	"bxslider": {
+		"js": [
+			"src/libs/bxslider/js/jquery.bxslider.js"
+		],
+		"src": [
+			"src/libs/bxslider/css/jquery.bxslider.css"
+		]
+	},
+	"formValidator": {
+		"js": [
+			"src/libs/formValidator/jquery.form-validator.min.js"
+		]
+	},
+	"msgBox": {
+		"js": [
+			"src/libs/msgBox/js/lobibox.min.js"
+		],
+		"css": [
+			"src/libs/msgBox/css/lobibox.min.css"
+		]
+	},
+	"icheck": {
+		"js": [
+			"src/libs/icheck/js/icheck.min.js"
+		]
+	},
+	"placeholder": {
+		"js": [
+			"src/libs/placeholder/jquery.textPlaceholder.js"
+		]
+	}
+}
