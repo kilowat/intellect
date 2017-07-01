@@ -1,0 +1,39 @@
+.ic-search{
+  @include sprite($ic-search);
+}
+.ic-dialog{
+  @include sprite($ic-dialog);
+}
+.ic-key{
+  @include sprite($ic-key);
+}
+.ic-vk{
+  @include sprite($ic-vk);
+  &:hover{
+    @include sprite($ic-vk-hover);
+  }
+}
+.ic-f{
+  @include sprite($ic-f);
+  &:hover{
+    @include sprite($ic-f-hover);
+  }
+}
+.ic-inst{
+  @include sprite($ic-inst);
+  &:hover{
+    @include sprite($ic-inst-hover);
+  }
+}
+.ic-you{
+  @include sprite($ic-you);
+  &:hover{
+    @include sprite($ic-you-hover);
+  }
+}
+.ic-in{
+  @include sprite($ic-in);
+  &:hover{
+    @include sprite($ic-in-hover);
+  }
+}

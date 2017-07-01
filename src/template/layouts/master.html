@@ -14,14 +14,27 @@
 </head>
 
 <body>
+
   <header>
-	{% include '../layouts/header.html' %}
+  <div class="wrapper">
+	  {% include '../layouts/header.html' %}
+  </div>
   </header>
+
   <main>
-	{% block content %}{% endblock %}
+  <div class="wrapper">
+    {% include '../layouts/sidebar.html' %}
+    <div class="content">
+      {% include '../components/breadcrumbs.html' %}
+      {% block content %}{% endblock %}
+    </div>
+    <div class="push"></div>
+  </div>
   </main>
   <footer>
-    {% include '../layouts/footer.html' %}
+    <div class="wrapper">
+      {% include '../layouts/footer.html' %}
+    </div>
   </footer>
   <script src="./libs/jquery/js/jquery.min.js"></script>
   <!--libs:js-->
@@ -34,6 +47,7 @@
   <script src="./js/all.js"></script>
 
   <!--endinject-->
+  </div>
 </body>
 
 

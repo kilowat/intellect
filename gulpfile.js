@@ -45,9 +45,9 @@ var root = "./app/";
 
 var configServer = {
   tunnel: false,
-  host: 'localhost',
+  host: 'intellect.local',
   logPrefix: "Frontend_Devil",
-  proxy: 'dev-frontend.local',
+  proxy: 'intellect.local',
   port: 9000,
   browser: "firefox",
 };

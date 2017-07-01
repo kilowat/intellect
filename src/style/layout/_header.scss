@@ -1,0 +1,82 @@
+header{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  .table{
+    width: 100%;
+    .table-cell{
+      vertical-align: middle;
+    }
+  }
+  .header-row{
+    @include container;
+    .logo-block{
+      width: span(3 of 12 0);
+      .logo{
+        padding-right: 10%;
+        a{
+          color: #000;
+          text-decoration: none;
+          img{
+            float: left;
+            margin-right: 10px;
+          }
+          .logo-content{
+            position: relative;
+            top: 10px;
+            .logo-text{
+              font-weight: 600;
+              font-size: 1.3rem;
+            }
+            .logo-slogan{
+              font-weight: 100;
+              font-size: 0.9rem;
+            }
+          }
+        }
+      }
+    }
+    .search-block{
+       width: span(5 at 4 of 12 0);
+    }
+    .user-block{
+      width: span(4 at 5 of 12 last);
+      a{
+        text-decoration: none;
+        color: #606060;
+        >*{
+          display: inline-block;
+          vertical-align: middle;
+        }
+        margin-right: 10px;
+        padding-right: 15px;
+        &:first-child{
+          display: inline-block;
+          border-right: 1px solid #e5e5e5;
+        }
+        i{
+          margin-right: 5px;
+        }
+        span{
+          border-bottom: 1px dashed;
+        }
+        &:hover{
+          color: $link-hover-color;
+        }
+      }
+      .dialog-link{
+        &:hover{
+          .ic-dialog{
+            @include sprite($ic-dialog-hover);
+          }
+        }
+      }
+      .login-link{
+        &:hover{
+          .ic-key{
+            @include sprite($ic-key-hover);
+          }
+        }
+      }
+    }
+  }
+}

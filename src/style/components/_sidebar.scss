@@ -1,0 +1,143 @@
+aside{
+  float: left;
+  width: 23%;
+  padding-right: 2%;
+  .left-menu{
+    ul{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li{
+          a{
+            width: 100%;
+            display: inline-block;
+            padding-top:5px;
+            padding-bottom: 5px;
+            text-decoration: none;
+            color: #000;
+            &:hover{
+              color:$link-hover-color;
+            }
+          }
+        }
+      }
+      >ul{
+        >li{
+          padding-bottom: 10px;
+          &:last-child{
+            >a{
+              padding-top:10px;
+              padding-bottom: 10px;
+              margin-top:5px;
+              margin-bottom: 5px;
+              border-bottom: 1px solid #dfdfdf;
+              border-top: 1px solid #dfdfdf;
+            }
+          }
+          >a{
+            font-weight: 600;
+            padding-bottom: 5px;
+            span{
+              width: 30px;
+            }
+            >*{
+              display: inline-block;
+              vertical-align: middle;
+            }
+            .item-icon{
+              margin-right: 10px;
+              display: inline-block;
+            }
+            &:hover, &.selected{
+              color: $link-hover-color;
+              .item-icon{
+                background-position: 0 100%;
+              }
+            }
+            &.selected{
+              &~{
+                ul{
+                  display: block;
+                }
+              }
+            }
+        }
+        ul
+        {
+          display: none;
+          >li{
+            >a{
+              font-weight: 100;
+            }
+          }
+        }
+      }
+    }
+  }
+  .contact-block{
+    padding-left: 30px;
+    padding-top:15px;
+    ul.city-list{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li{
+        >*{
+          display: block;
+        }
+        margin-bottom: 25px;
+        .city-name{
+          color: #b2b2b2;
+          font-weight: 100;
+          padding-bottom: 5px;
+        }
+        .city-phone{
+
+        }
+      }
+    }
+    .callback-block{
+      padding-bottom: 20px;
+      .callback-link{
+        font-weight: 100;
+        text-decoration: none;
+        border-bottom: 1px dashed;
+        color: $color-dark;
+        &:hover{
+          color: $link-hover-color;
+        }
+      }
+    }
+    .mail-block{
+      padding-bottom: 20px;
+      .mail-to{
+        font-weight: 100;
+        color: $color-dark;
+        &:hover{
+          color: $link-hover-color;
+        }
+      }
+    }
+  }
+  .soc-block{
+    padding-top: 20px;
+    border-top: 1px solid #dfdfdf;
+    >span{
+      font-weight: 100;
+      color: $color-dark;
+      font-size: 0.9rem;
+      margin-left: 30px;
+    }
+    ul{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      margin-top: 15px;
+      margin-left: 30px;
+      li{
+        display: inline-block;
+        margin-right: 3px;
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.bx-breadcrumb{
+  font-size: 0.95rem;
+  margin-top: 0px;
+  .bx-breadcrumb-item {
+    float: left;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    line-height: 13px;
+    vertical-align: middle;
+    margin-right: 5px;
+    i{
+      color: #0b4e78;
+      padding-right: 0px;
+    }
+
+    span{
+      color: $link-hover-color;
+    }
+    a>span{
+      color: $color-dark;
+      &:hover{
+        color: $link-hover-color;
+      }
+    }
+  }
+  > * {
+    display: inline-block;
+  }
+
+}

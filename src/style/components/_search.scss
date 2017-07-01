@@ -1,0 +1,28 @@
+.search{
+  padding-right: 5%;
+  .search-inputs{
+    position: relative;
+    input[type=text]{
+      width: 100%;
+      box-sizing: border-box;
+      height: 50px;
+      padding-left: 10px;
+      padding-right: 10px;
+      border: 1px solid #dfdfdf;
+      border-radius: 4px;
+      &:focus{
+        border-color: #b5e99d;
+        box-shadow: 0px 0px 2px 0px #85db5d;
+      }
+    }
+    .search-btn{
+      position: absolute;
+      right: 5px;
+      top: 15px;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+}
