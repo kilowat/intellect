@@ -1,0 +1,35 @@
+{% extends './../layouts/master.html' %}
+{% block content %}
+
+		<h1 class="section-header">Интернет магазины</h1>
+
+  <!--start component solutions items-->
+  <div class="solution-item">
+    <div class="solution-item-list">
+      <!--foreach $arResult-->
+			{% for item in items %}
+      <div class="item {{item.promo}}">
+        <a class="item-pic-wrapper" style="background-image:url({{item.img}})" title="" href="./solution-detail.html">
+        	<div class="text">
+						{{ item.text }}
+        	</div>
+        </a>
+				<div class="name">
+					<a title="./solution-detail.html" href="">{{item.name}}</a>
+				</div>
+				<div class="detail-row">
+					<span class="price">от 23 000 Р</span>
+					<span class="download-count"><i class="ic-download"></i> 12</span>
+				</div>
+      </div>
+			{% endfor %}
+      <!--endforeach-->
+    </div>
+  </div>
+  <!--end component solutions items-->
+	<div class="about-text">
+		<p>Компания «Интеллект-Сервис» специализируется на разработке коммерческих сайтов различной сложности - от визиток и посадочных страниц до крупных интернет-магазинов и стартапов. Для разработки проектов мы используем CMS «1С-Битрикс», либо системы собственной разработки. Также мы осуществляем последующее техническое сопровождение сайтов, а также проводим обучение клиентов по администрированию разработанных сайтов. Для разработки проектов мы используем CMS «1С-Битрикс».</p>
+
+		<p>Для разработки проектов мы используем CMS «1С-Битрикс», либо системы собственной разработки. Также мы осуществляем последующее техническое сопровождение сайтов, а также проводим обучение клиентов по администрированию разработанных сайтов.</p>
+	</div>
+{% endblock %}

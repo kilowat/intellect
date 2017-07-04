@@ -57,3 +57,44 @@ footer,
     height: auto;
   }
 }
+.promo-new{
+  &:after{
+    top:-3px;
+    right: -3px;
+    position: absolute;
+    display: block;
+    content: '';
+    @include sprite($ic-promo-new);
+  }
+}
+.promo-hit{
+  &:after{
+    top:-3px;
+    right: -3px;
+    position: absolute;
+    display: block;
+    content: '';
+    @include sprite($ic-promo-hit);
+  }
+}
+.promo-sold{
+  &:after{
+    top:-3px;
+    right: -3px;
+    position: absolute;
+    display: block;
+    content: '';
+    @include sprite($ic-promo-sold);
+  }
+}
+.soc-block{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  >*{
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .soc-text{
+    font-weight: 100;
+  }
+}

@@ -1,0 +1,48 @@
+{% extends './../layouts/master.html' %}
+{% block content %}
+	<div class="section-block text-center">
+		<h1 class="section-header">Готовые решения</h1>
+		<div class="section-text">
+			Компания Интеллект-Сервис предоставляет полный спектр услуг<br>
+			по разработке и поддержке интернет-проектов
+		</div>
+	</div>
+
+	<!--start component solutions list-->
+	<div class="service solutions">
+		<div class="service-list">
+			<!--foreach $arReslut-->
+			{% for item in serviceItems%}
+			<div class="item" style="background-image:url({{ item.bgImg }})">
+				<div class="item-wrapper">
+					<div class="name">
+						<a href="#" title="">
+							<span class="wrapper-icon">
+								<i class="item-icon" style="background-image:url({{ item.img.src }});width:{{item.img.width}}; height:{{item.img.height}}"></i>
+							</span>
+							{{ item.name }}</a>
+					</div>
+					<div class="text">
+            {{item.text}}
+					</div>
+				</div>
+        <div class="item-footer">
+          <div class="count-views">
+            Количество решений: 6
+          </div>
+          <div class="detail-link text-center">
+            <a href="#" title="" class="detail-link-btn">Подробнее</a>
+          </div>
+        </div>
+			</div>
+			{% endfor %}
+			<!--endforeach-->
+		</div>
+	</div>
+	<!--end component service list-->
+	<div class="about-text">
+		<p>Компания «Интеллект-Сервис» специализируется на разработке коммерческих сайтов различной сложности - от визиток и посадочных страниц до крупных интернет-магазинов и стартапов. Для разработки проектов мы используем CMS «1С-Битрикс», либо системы собственной разработки. Также мы осуществляем последующее техническое сопровождение сайтов, а также проводим обучение клиентов по администрированию разработанных сайтов. Для разработки проектов мы используем CMS «1С-Битрикс».</p>
+
+		<p>Для разработки проектов мы используем CMS «1С-Битрикс», либо системы собственной разработки. Также мы осуществляем последующее техническое сопровождение сайтов, а также проводим обучение клиентов по администрированию разработанных сайтов.</p>
+	</div>
+{% endblock %}

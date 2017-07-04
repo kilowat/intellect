@@ -1,0 +1,58 @@
+.solution-item{
+  .solution-item-list{
+    @include clearfix;
+    .item{
+      @include gallery(1 of 3 0.03);
+      height: 250px;
+      margin-bottom: 4%;
+      text-decoration: none;
+      position: relative;
+      .item-pic-wrapper{
+        text-decoration: none;
+        display: block;
+        position: relative;
+        height: 190px;
+        background-size: cover;
+        background-position: center center;
+        &:hover{
+          .text{
+            display: block;
+          }
+        }
+        .text{
+          display: none;
+          padding-top: 15px;
+          padding-left: 15px;
+          color: #fff;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0,0,0,0.4);
+          box-sizing: border-box;
+        }
+      }
+      .name{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        a{
+            color: $color-dark;
+            text-decoration: none;
+            &:hover{
+              color: $link-hover-color;
+            }
+        }
+      }
+      .detail-row{
+        font-size: 0.95rem;
+        color: #b2b2b2;
+        @include clearfix;
+        .price{
+          float: left;
+        }
+        .download-count{
+          float:right;
+          padding-right: 10%;
+        }
+      }
+    }
+  }
+}

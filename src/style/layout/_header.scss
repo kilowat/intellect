@@ -40,6 +40,7 @@ header{
     }
     .user-block{
       width: span(4 at 5 of 12 last);
+      text-align: right;
       a{
         text-decoration: none;
         color: #606060;
@@ -52,6 +53,10 @@ header{
         &:first-child{
           display: inline-block;
           border-right: 1px solid #e5e5e5;
+        }
+        &:last-child{
+          margin-right: 0;
+          padding-right: 0;
         }
         i{
           margin-right: 5px;

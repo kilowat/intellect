@@ -8,8 +8,8 @@
       background-size: contaier;
       background-position: center right;
       background-repeat: no-repeat;
-      min-height: 200px;
       background-color: #f5f5f5;
+      position: relative;
       &:hover{
         background-color: #d6f0f3;
       }
@@ -54,6 +54,48 @@
                 color: $link-hover-color;
               }
             }
+          }
+        }
+      }
+    }
+  }
+  &.solutions{
+    .service-list{
+      .item{
+        position: relative;
+        padding-bottom: 15px;
+        .item-wrapper{
+          position: relative;
+          box-sizing: border-box;
+          .name{
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px dotted;
+          }
+          .text{
+            margin: 0;
+            font-size: 0.95rem;
+            //font-weight: 100;
+            line-height: 1.2rem;
+            color: $color-dark;
+            padding-bottom: 50px;
+            margin-bottom: 20px;
+          }
+        }
+        .item-footer{
+          position: absolute;
+          bottom: 15px;
+          margin: auto;
+          width: 100%;
+          text-align: center;
+          box-sizing: border-box;
+          padding-left: 15px;
+          padding-right: 15px;
+          .count-views{
+            margin-bottom: 20px;
+            padding-top: 10px;
+            border-top: 1px dotted;
+            font-weight: 100;
           }
         }
       }

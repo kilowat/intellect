@@ -1,0 +1,70 @@
+{% extends './../layouts/master.html' %}
+{% block content %}
+<div class="section-block text-center">
+  <h1 class="section-header">Портфолио</h1>
+  <div class="section-text">
+    Компания Интеллект-Сервис предоставляет полный спектр услуг<br>
+    по разработке и поддержке интернет-проектов
+  </div>
+</div>
+<!--start component tags list-->
+<div class="tags-block">
+  <a href="#" title="">Все проекты</a>
+  <a href="#" title="">Слоны</a>
+  <a href="#" title="">Интернет магазины</a>
+  <a href="#" title="">Каталоги</a>
+  <a href="#" title="">Слоны</a>
+  <a href="#" title="">Интернет магазины</a>
+  <a href="#" title="">Каталоги</a>
+  <a href="#" title="">Слоны</a>
+  <a href="#" title="">Интернет магазины</a>
+  <a href="#" title="">Каталоги</a>
+  <a href="#" title="">Слоны</a>
+  <a href="#" title="">Интернет магазины</a>
+  <a href="#" title="">Каталоги</a>
+  <a href="#" title="">Слоны</a>
+  <a href="#" title="">Интернет магазины</a>
+  <a href="#" title="">Каталоги</a>
+  <div class="row">
+    <div class="current-tag">
+      * Слоны - это крупные проекты под ключ, сочетающие в себе работы сразу по нескольким видам услуг.
+    </div>
+  </div>
+</div>
+<!--end component tags list-->
+
+<!--start component portfolio list-->
+<div class="portfolio">
+  <div class="portfolio-list">
+    <!--foreach $arResult-->
+    {% for item in items %}
+    <div class="item">
+      <div class="item-pic-wrapper" style="background-image:url({{ item.img }})">
+        <a class="item-content" href="">
+          <div class="name">
+            {{ item.name }}
+          </div>
+          <div class="text">
+            {{ item.text }}
+          </div>
+          <div class="detail-row">
+            <span class="date">
+              {{ item.date }}
+            </span>
+            <span class="see-detail" title="">Подробнее</span>
+          </div>
+        </a>
+      </div>
+    </div>
+    {% endfor %}
+    <!--endforeach-->
+  </div>
+</div>
+<!--end component portfolio list-->
+
+<div class="about-text">
+		<p>Компания «Интеллект-Сервис» специализируется на разработке коммерческих сайтов различной сложности - от визиток и посадочных страниц до крупных интернет-магазинов и стартапов. Для разработки проектов мы используем CMS «1С-Битрикс», либо системы собственной разработки. Также мы осуществляем последующее техническое сопровождение сайтов, а также проводим обучение клиентов по администрированию разработанных сайтов. Для разработки проектов мы используем CMS «1С-Битрикс».</p>
+
+		<p>Для разработки проектов мы используем CMS «1С-Битрикс», либо системы собственной разработки. Также мы осуществляем последующее техническое сопровождение сайтов, а также проводим обучение клиентов по администрированию разработанных сайтов.</p>
+</div>
+{% endblock %}

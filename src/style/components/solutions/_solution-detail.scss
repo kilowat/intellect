@@ -1,0 +1,192 @@
+.solution-detail{
+  .main-block{
+    margin-bottom: 35px;
+    @include clearfix;
+
+    .video-block{
+      float:left;
+      width: 68%;
+      margin-right: 2%;
+      min-height: 300px;
+      box-sizing: border-box;
+      iframe{
+        background-color: #ccc;
+        width: 100%;
+        height: 320px;
+      }
+    }
+    .info-block{
+      position: relative;
+      padding: 15px;
+      box-sizing: border-box;
+      float: left;
+      width: 30%;
+      min-height: 320px;
+      border: 1px dotted #727272;
+      .price-row{
+        border-bottom: 1px dotted #727272;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        .price{
+          font-size: 1.05rem;
+          display: inline-block;
+          .cur-price{
+            font-weight: 600;
+          }
+          .old-price{
+            float:right;
+            color: #b4b4b4;
+            position: relative;
+            &:after{
+              display: block;
+              height: 1px;
+              width: 110%;
+              left: -5%;
+              position: absolute;
+              background-color:  #b4b4b4;
+              content: "";
+              top:52%;
+            }
+          }
+        }
+      }
+      .price-descr{
+        font-size: 0.9rem;
+        color: $color-dark;
+        margin-bottom: 15px;
+        font-weight: 100;
+        border-bottom: 1px dotted #727272;
+        padding-bottom: 10px;
+      }
+      .link-row{
+        text-align: center;
+        .row{
+          margin-bottom: 10px;
+          &:last-child{
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+  .soc-row{
+    @include clearfix;
+    margin-bottom: 30px;
+    .count-block{
+      float: left;
+      font-weight: 100;
+      color: $color-dark;
+      font-size: 0.9rem;
+      >*{
+        display: inline-block;
+        vertical-align: middle;
+      }
+      i{
+        margin-right: 10px;
+      }
+    }
+    .soc-block{
+      float:right;
+    }
+  }
+  .pager-block{
+    .switch-row{
+      margin-bottom: 30px;
+      a{
+        text-decoration: none;
+        color: #000;
+        border-bottom: 1px dashed;
+        margin-right: 20px;
+        &:last-child{
+          margin-right: 0;
+        }
+        &:hover, &.selected{
+          color:$link-hover-color;
+        }
+      }
+    }
+    .switch-content{
+      .advantage{
+        .advantage-list{
+          @include clearfix;
+          .item{
+            @include gallery(1 of 2 0.1);
+            margin-bottom: 30px;
+            .pic{
+              float: left;
+              margin-right: 5%;
+              width: 10%;
+              box-sizing: border-box;
+            }
+            .item-content{
+              box-sizing: border-box;
+              float: left;
+              width: 85%;
+              .name{
+                margin-bottom: 10px;
+                a{
+                  text-decoration: none;
+                  color: $color-dark;
+                  font-weight: 600;
+                }
+              }
+              .text{
+                margin-bottom:10px;
+                color: #848484;
+                font-weight: 100;
+                font-size: 0.9rem;
+              }
+            }
+            .detail-link{
+              display: inline-block;
+              color: $color-dark;
+              &:hover{
+                color: $link-hover-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .order-variant{
+    .table{
+      margin-bottom: 30px;
+      width: 100%;
+      .table-row{
+        .table-cell{
+          border: 1px solid #d1d1d1;
+          text-align: center;
+          padding-top:15px;
+          padding-bottom: 15px;
+          paddig-left:20px;
+          padding-right: 20px;
+          &:first-child{
+            border-right: 0px;
+            border-bottom: 0px;
+          }
+          &:nth-child(2){
+            border-right: 0px;
+            border-bottom: 0px;
+          }
+          &:nth-child(3){
+            border-bottom: 0px;
+          }
+        }
+        &:last-child{
+          .table-cell{
+            border-bottom: 1px solid #d1d1d1;
+          }
+        }
+      }
+      .header-row{
+        .table-cell{
+          background-color: #eef5fb;
+        }
+      }
+      .body-row{
+        font-weight: 100;
+      }
+    }
+  }
+}

@@ -37,3 +37,9 @@
     @include sprite($ic-in-hover);
   }
 }
+.ic-download{
+  @include sprite($ic-download);
+}
+.ic-count{
+  @include sprite($ic-count);
+}

@@ -26,8 +26,8 @@ aside{
           padding-bottom: 10px;
           &:last-child{
             >a{
-              padding-top:10px;
-              padding-bottom: 10px;
+              padding-top:20px;
+              padding-bottom: 20px;
               margin-top:5px;
               margin-bottom: 5px;
               border-bottom: 1px solid #dfdfdf;
@@ -97,7 +97,7 @@ aside{
       }
     }
     .callback-block{
-      padding-bottom: 20px;
+      padding-bottom: 30px;
       .callback-link{
         font-weight: 100;
         text-decoration: none;
@@ -109,7 +109,7 @@ aside{
       }
     }
     .mail-block{
-      padding-bottom: 20px;
+      padding-bottom: 10px;
       .mail-to{
         font-weight: 100;
         color: $color-dark;

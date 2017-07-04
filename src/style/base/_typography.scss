@@ -1,17 +1,24 @@
+.section-header{
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 1.6em;
+  font-weight: 400;
+  color: #2a2a28;
+  text-align: center;
+  clear:both;
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
+}
 .section-block{
   margin-top: 50px;
   border: 1px dotted #767676;
   padding-bottom: 2em;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   width: 70%;
   .section-header{
-    margin: 0;
-    text-transform: uppercase;
-    font-size: 1.6em;
-    font-weight: 400;
-    color: #2a2a28;
+    margin:0;
     position: relative;
     top: -0.65em;
     background-color: #fff;
@@ -29,4 +36,40 @@ p{
   line-height: 1.3rem;
   margin-bottom: 10px;
   font-size: 0.95rem;
+}
+.text-formated{
+   *{
+     color: #848484;
+   }
+   p,span,a,i{
+     font-weight: 100;
+   }
+   ul,ol{
+     margin-top:10px;
+     margin-bottom: 10px;
+     font-weight: 100;
+     margin-left: 0;
+     padding-left: 0;
+     list-style-position: inside;
+   }
+   b{
+     color: #848484;
+   }
+   h2{
+     font-size: 1.6em;
+   }
+   h3{
+     font-size: 1.4em;
+   }
+   h2,h3{
+     color: #000;
+     font-weight: 400;
+   }
+}
+.component-header{
+  font-size: 1.4em;
+  line-height: 1.5em;
+  text-align: center;
+  font-weight: 400;
+  color: #2a2a28;
 }
