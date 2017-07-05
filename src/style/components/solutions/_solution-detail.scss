@@ -147,6 +147,31 @@
           }
         }
       }
+      .characteristics{
+        .table{
+          width: 100%;
+          .table-row{
+            &:nth-child(odd){
+              .table-cell{
+                background-color: #f5f5f5;
+              }
+            }
+            .table-cell{
+              text-align: center;
+              vertical-align: middle;
+              padding: 10px;
+              &:last-child{
+                font-weight: 100;
+              }
+            }
+          }
+        }
+      }
+      .description{
+        h2,h3,h4{
+          text-align: center;
+        }
+      }
     }
   }
   .order-variant{
@@ -186,6 +211,11 @@
       }
       .body-row{
         font-weight: 100;
+        &:nth-child(odd){
+          .table-cell{
+            background-color: #fafafa;
+          }
+        }
       }
     }
   }

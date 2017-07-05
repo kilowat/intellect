@@ -98,3 +98,13 @@ footer,
     font-weight: 100;
   }
 }
+a{
+  color: $color-dark;
+  &:hover{
+    color: $link-hover-color;
+  }
+}
+.link-detail{
+  font-size: 0.95rem;
+  font-weight: 100;
+}

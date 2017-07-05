@@ -1,0 +1,46 @@
+.reviews{
+  .reviews-list{
+    @include clearfix;
+    .item{
+      @include gallery(1 of 3 0.02);
+      margin-bottom: 0.5%;
+      background-color: #f5f5f5;
+      min-height: 250px;
+      box-sizing: border-box;
+      .item-wrapper{
+        padding: 15px;
+        .pic{
+          float: left;
+          margin-right: 10px;
+          img{
+            border-radius: 100%;
+          }
+          margin-bottom: 10px;
+        }
+        .name{
+          a{
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+          }
+          margin-bottom: 10px;
+        }
+        .company{
+          font-style: italic;
+          color: $color-dark;
+        }
+        .text{
+          clear: both;
+          font-size: 0.95rem;
+          font-weight: 100;
+          color: $color-dark;
+          height: 54px;
+          overflow: hidden;
+        }
+        .row{
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}

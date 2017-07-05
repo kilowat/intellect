@@ -5,7 +5,10 @@
   <meta charset="utf-8">
   <title>Intellect</title>
   <!-- libs:css -->
+  <link rel="stylesheet" href="./libs/bxslider/src/jquery.bxslider.css">
   <link rel="stylesheet" href="./libs/fancybox/css/jquery.fancybox.css">
+  <link rel="stylesheet" href="./libs/msgBox/css/lobibox.min.css">
+  <link rel="stylesheet" href="./libs/slick/css/slick.css">
   <!-- endinject -->
   <!-- dev:css -->
   <link rel="stylesheet" href="./css/screen.css">
@@ -207,12 +210,13 @@
           <div class="pager-block">
             <div class="switch-row">
               <a href="#" title="" id="advantage" class="selected">Преимущества</a>
-              <a href="#" title="">Характеристики</a>
-              <a href="#" title="">Описание</a>
+              <a href="#" title="" id="characteristics">Характеристики</a>
+              <a href="#" title="" id="description">Описание</a>
               <a href="#" title="">Галерея</a>
               <a href="#" title="">Отзывы</a>
             </div>
             <div class="switch-content">
+              <!--start advantage-->
               <div class="advantage">
                 <div class="advantage-list">
                   <!--foreach $arResult-->
@@ -258,6 +262,166 @@
                   <!--endforeach-->
                 </div>
               </div>
+              <!--end advantage-->
+
+              <!--start characteristics-->
+
+              <div class="characteristics">
+                <div class="table">
+                  <div class="table-row">
+                    <div class="table-cell">property name</div>
+                    <div class="table-cell">property value</div>
+                  </div>
+                  <div class="table-row">
+                    <div class="table-cell">property name</div>
+                    <div class="table-cell">property value</div>
+                  </div>
+                  <div class="table-row">
+                    <div class="table-cell">property name</div>
+                    <div class="table-cell">property value</div>
+                  </div>
+                  <div class="table-row">
+                    <div class="table-cell">property name</div>
+                    <div class="table-cell">property value</div>
+                  </div>
+                </div>
+              </div>
+              <!--end characteristics-->
+
+              <!--start description-->
+              <div class="description text-formated">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                  aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <h2>Заголовок 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                  aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <ul>
+                  <li>Список</li>
+                </ul>
+                <ol>
+                  <li>Список</li>
+                </ol>
+              </div>
+              <!--end description-->
+
+              <!--start gallery-->
+              <div class="gallery">
+
+                <ul class="bxslider">
+                  <li><img src="./images/gallery-normal.png" /></li>
+                  <li><img src="./images/gallery-normal.png" /></li>
+                  <li><img src="./images/gallery-normal.png" /></li>
+                  <li><img src="./images/gallery-normal.png" /></li>
+                  <li><img src="./images/gallery-normal.png" /></li>
+                  <li><img src="./images/gallery-normal.png" /></li>
+                  <li><img src="./images/gallery-normal.png" /></li>
+                  <li><img src="./images/gallery-normal.png" /></li>
+                </ul>
+
+                <div class="bx-pager">
+                  <a data-slide-index="0" href="" style="background-image:url(./images/gallery-min.png)"></a>
+                  <a data-slide-index="1" href="" style="background-image:url(./images/gallery-min.png)"></a>
+                  <a data-slide-index="2" href="" style="background-image:url(./images/gallery-min.png)"></a>
+                  <a data-slide-index="3" href="" style="background-image:url(./images/gallery-min.png)"></a>
+                  <a data-slide-index="4" href="" style="background-image:url(./images/gallery-min.png)"></a>
+                  <a data-slide-index="5" href="" style="background-image:url(./images/gallery-min.png)"></a>
+                  <a data-slide-index="6" href="" style="background-image:url(./images/gallery-min.png)"></a>
+                  <a data-slide-index="7" href="" style="background-image:url(./images/gallery-min.png)"></a>
+                  <a data-slide-index="8" href="" style="background-image:url(./images/gallery-min.png)"></a>
+                </div>
+
+              </div>
+              <!--end gallery-->
+
+              <!--start component top reviews-->
+              <div class="reviews top-reviews">
+                <div class="reviews-list">
+                  <!--foreach $arResult-->
+
+                  <div class="item">
+                    <div class="item-wrapper">
+                      <div class="pic">
+                        <a href="#" title=""><img src="./images/review-pic.png" alt=""></a>
+                      </div>
+                      <div class="name">
+                        <a href="#" title="">Иван Иванов</a>
+                      </div>
+                      <div class="company">
+                        ООО Магнит
+                      </div>
+                      <div class="text">
+                        «Четкая детализация всех работ позволила точно рассчитать смету и сроки работ»
+                      </div>
+                      <div class="row text-center">
+                        <a href="#" class="detail-link-btn" title="">Подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="item-wrapper">
+                      <div class="pic">
+                        <a href="#" title=""><img src="./images/review-pic.png" alt=""></a>
+                      </div>
+                      <div class="name">
+                        <a href="#" title="">Иван Иванов</a>
+                      </div>
+                      <div class="company">
+                        ООО Магнит
+                      </div>
+                      <div class="text">
+                        «Четкая детализация всех работ позволила точно рассчитать смету и сроки работ»
+                      </div>
+                      <div class="row text-center">
+                        <a href="#" class="detail-link-btn" title="">Подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="item-wrapper">
+                      <div class="pic">
+                        <a href="#" title=""><img src="./images/review-pic.png" alt=""></a>
+                      </div>
+                      <div class="name">
+                        <a href="#" title="">Иван Иванов</a>
+                      </div>
+                      <div class="company">
+                        ООО Магнит
+                      </div>
+                      <div class="text">
+                        «Четкая детализация всех работ позволила точно рассчитать смету и сроки работ»
+                      </div>
+                      <div class="row text-center">
+                        <a href="#" class="detail-link-btn" title="">Подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="item-wrapper">
+                      <div class="pic">
+                        <a href="#" title=""><img src="./images/review-pic.png" alt=""></a>
+                      </div>
+                      <div class="name">
+                        <a href="#" title="">Иван Иванов</a>
+                      </div>
+                      <div class="company">
+                        ООО Магнит
+                      </div>
+                      <div class="text">
+                        «Четкая детализация всех работ позволила точно рассчитать смету и сроки работ»
+                      </div>
+                      <div class="row text-center">
+                        <a href="#" class="detail-link-btn" title="">Подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--end foreach-->
+                </div>
+              </div>
+              <!--end component top reviews-->
             </div>
           </div>
 
@@ -393,6 +557,64 @@
           <span class="soc-text">Понравилось решение? Расскажи друзьям!</span>
         </div>
 
+        <!--start component top solution-->
+        <div class="solution-item top-solution">
+          <h2 class="component-header">Другие готовые решения на 1-С Битрикс</h2>
+          <div class="solution-item-list">
+            <!--foreach $arResult-->
+
+            <div class="item promo-new">
+              <a class="item-pic-wrapper" style="background-image:url(./images/solution-pic.png)" title="" href="./solution-detail.html">
+                <div class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea...
+                </div>
+              </a>
+              <div class="name">
+                <a title="./solution-detail.html" href="">Интернет магазин строительных материалов...</a>
+              </div>
+              <div class="detail-row">
+                <span class="price">от 23 000 Р</span>
+                <span class="download-count"><i class="ic-download"></i> 12</span>
+              </div>
+            </div>
+
+            <div class="item promo-hit">
+              <a class="item-pic-wrapper" style="background-image:url(./images/solution-pic.png)" title="" href="./solution-detail.html">
+                <div class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea...
+                </div>
+              </a>
+              <div class="name">
+                <a title="./solution-detail.html" href="">Интернет магазин строительных материалов...</a>
+              </div>
+              <div class="detail-row">
+                <span class="price">от 23 000 Р</span>
+                <span class="download-count"><i class="ic-download"></i> 12</span>
+              </div>
+            </div>
+
+            <div class="item promo-sold">
+              <a class="item-pic-wrapper" style="background-image:url(./images/solution-pic.png)" title="" href="./solution-detail.html">
+                <div class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea...
+                </div>
+              </a>
+              <div class="name">
+                <a title="./solution-detail.html" href="">Интернет магазин строительных материалов...</a>
+              </div>
+              <div class="detail-row">
+                <span class="price">от 23 000 Р</span>
+                <span class="download-count"><i class="ic-download"></i> 12</span>
+              </div>
+            </div>
+
+            <!--endforeach-->
+          </div>
+          <div class="detail-link-row text-center">
+            <a href="#" title="" class="link-detail">Все готовые решения</a>
+          </div>
+        </div>
+        <!--end component top solution-->
 
       </div>
       <div class="push"></div>
@@ -417,7 +639,15 @@
   <script src="./libs/jquery/js/jquery.min.js"></script>
   <!--libs:js-->
 
+  <script src="./libs/bxslider/js/jquery.bxslider.js"></script>
+
   <script src="./libs/fancybox/js/jquery.fancybox.pack.js"></script>
+
+  <script src="./libs/formValidator/js/jquery.form-validator.min.js"></script>
+
+  <script src="./libs/msgBox/js/lobibox.min.js"></script>
+
+  <script src="./libs/slick/js/slick.min.js"></script>
 
   <!--endinject-->
   <!--dev:js-->
