@@ -35,7 +35,7 @@ var libs = {
  // bootstrap: libsPath.bootstrap,
   slick: libsPath.slick,
   formValidator: libsPath.formValidator,
-  //select:libsPath.select,
+  select:libsPath.select,
   fancybox:libsPath.fancybox,
   //icheck:libsPath.icheck,
   //placeholder:libsPath.placeholder,

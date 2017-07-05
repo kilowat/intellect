@@ -5,7 +5,7 @@ body{
 .wrapper{
   margin: auto;
   max-width: 1200px;
-  min-width: 320px;
+  min-width: 1000px; //320px;
   padding-left: 15px;
   padding-right: 15px;
   @include clearfix;
@@ -24,13 +24,13 @@ body{
   display: table-cell;
 }
 .text-left{
-  text-align: left;
+  text-align: left!important;
 }
 .text-center{
-  text-align: center;
+  text-align: center!important;;
 }
 .text-right{
-  text-align: right;
+  text-align: right!important;;
 }
 i{
   display: inline-block;
@@ -107,4 +107,12 @@ a{
 .link-detail{
   font-size: 0.95rem;
   font-weight: 100;
+}
+.back-link-block{
+  a{
+    font-weight: 100;
+    i{
+      margin-right: 5px;
+    }
+  }
 }

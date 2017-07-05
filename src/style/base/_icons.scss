@@ -43,3 +43,21 @@
 .ic-count{
   @include sprite($ic-count);
 }
+.ic-arrow-nav-left{
+  @include sprite($ic-arrow-nav-left);
+}
+.ic-arrow-nav-right{
+  @include sprite($ic-arrow-nav-right);
+}
+.ic-view{
+  @include sprite($ic-view);
+}
+.ic-badge-1{
+  @include sprite($ic-badge-1);
+}
+.ic-badge-2{
+  @include sprite($ic-badge-2);
+}
+.ic-tags{
+  @include sprite($ic-tags);
+}

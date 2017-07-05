@@ -62,9 +62,20 @@ p{
      font-size: 1.4em;
    }
    h2,h3{
-     color: #000;
+     color: $color-dark;
      font-weight: 400;
+     text-align: center;
    }
+   img{
+     max-width: 100%;
+     box-sizing: border-box;
+     border: 1px solid #ccc;
+   }
+  figcaption{
+    margin-top: 5px;
+    font-style: italic;
+    font-weight: 100;
+  }
 }
 .component-header{
   font-size: 1.4em;

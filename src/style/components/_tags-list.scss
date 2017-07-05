@@ -18,4 +18,16 @@
     margin-top: 15px;
   }
   margin-bottom: 30px;
+
+  &.tags-news{
+    h2{
+      >*{
+        display: inline-block;
+        vertical-align: middle;
+      }
+      i{
+        margin-right: 15px;
+      }
+    }
+  }
 }

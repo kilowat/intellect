@@ -1,5 +1,27 @@
-.solution-item{
-  .solution-item-list{
+.news-cmp{
+
+  .sort-row{
+    @include clearfix;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    font-size: 0.95rem;
+    font-weight: 100;
+    .sort-block{
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 40px;
+    }
+    .current-tags{
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .search-tags{
+      float: right;
+      position: relative;
+    }
+  }
+
+  .news-list{
     @include clearfix;
     .item{
       @include gallery(1 of 3 0.03);
@@ -19,6 +41,26 @@
             display: block;
           }
         }
+        &.badge-1{
+          &:after{
+            display: block;
+            content: "";
+            @include sprite($ic-badge-1);
+            position: absolute;
+            bottom: 10px;
+            right: 15px;
+          }
+        }
+        &.badge-2{
+          &:after{
+            display: block;
+            content: "";
+            @include sprite($ic-badge-1);
+            position: absolute;
+            bottom: 10px;
+            right: 15px;
+          }
+        }
         .text{
           font-size: 0.9rem;
           display: none;
@@ -29,6 +71,13 @@
           height: 100%;
           background-color: rgba(0,0,0,0.4);
           box-sizing: border-box;
+          .bottom-row{
+            position: absolute;
+            bottom: 15px;
+            .author{
+              font-size: 1rem;
+            }
+          }
         }
       }
       .name{
@@ -46,7 +95,7 @@
         font-size: 0.95rem;
         color: #b2b2b2;
         @include clearfix;
-        .price{
+        .date{
           float: left;
         }
         .download-count{

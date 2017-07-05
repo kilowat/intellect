@@ -26,6 +26,9 @@ header{
             .logo-text{
               font-weight: 600;
               font-size: 1.3rem;
+              @include breakpoint(max-width $max-width){
+                font-size: 1.1rem;
+              }
             }
             .logo-slogan{
               font-weight: 100;
@@ -42,14 +45,16 @@ header{
       width: span(4 at 5 of 12 last);
       text-align: right;
       a{
+        font-size: 0.9rem;
         text-decoration: none;
         color: #606060;
         >*{
           display: inline-block;
           vertical-align: middle;
         }
-        margin-right: 10px;
-        padding-right: 15px;
+        margin-right: 2%;
+        padding-right: 4%;
+
         &:first-child{
           display: inline-block;
           border-right: 1px solid #e5e5e5;

@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Intellect</title>
+  <title></title>
   <!-- libs:css -->
   <link rel="stylesheet" href="./libs/bxslider/src/jquery.bxslider.css">
   <link rel="stylesheet" href="./libs/fancybox/css/jquery.fancybox.css">
@@ -166,168 +166,105 @@
         </div>
 
 
-        <div class="section-block text-center">
-          <h1 class="section-header">Портфолио</h1>
-          <div class="section-text">
-            Компания Интеллект-Сервис предоставляет полный спектр услуг<br> по разработке и поддержке интернет-проектов
+        <h1 class="section-header">Портфолио детальная</h1>
+
+        <!--start component portfolio detail-->
+        <div class="portfolio-detail">
+          <div class="main-block">
+            <div class="pic-block">
+              <a href="#" title="" class="fancybox"><img src="./images/gallery-normal.png" alt=""></a>
+            </div>
+            <div class="prop-block">
+              <div class="props">
+                <div class="prop-row">
+                  <span class="prop-name">Сдача проекта:</span><span class="prop-value">май 2017</span>
+                </div>
+                <div class="prop-row">
+                  <!--if array-->
+                  <div class="prop-name">Состав работ</div>
+                  <div class="prop-value-list">
+                    <!--foreach value-->
+                    <div class="prop-value">Разработка логотипа</div>
+                    <div class="prop-value">Разработка логотипа</div>
+                    <div class="prop-value">Разработка логотипа</div>
+                    <div class="prop-value">Разработка логотипа</div>
+                    <!--endforeach-->
+                  </div>
+                </div>
+                <div class="prop-row project-link">
+                  <a href="#" title="">site.ru</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-formated detail-text">
+            <h2>Заголовок 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+              irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <figure>
+              <img src='./images/gallery-normal.png' alt='missing' />
+              <figcaption>Подпись к изображению</figcaption>
+            </figure>
           </div>
         </div>
-        <!--start component tags list-->
-        <div class="tags-block">
-          <a href="#" title="">Все проекты</a>
-          <a href="#" title="">Слоны</a>
-          <a href="#" title="">Интернет магазины</a>
-          <a href="#" title="">Каталоги</a>
-          <a href="#" title="">Слоны</a>
-          <a href="#" title="">Интернет магазины</a>
-          <a href="#" title="">Каталоги</a>
-          <a href="#" title="">Слоны</a>
-          <a href="#" title="">Интернет магазины</a>
-          <a href="#" title="">Каталоги</a>
-          <a href="#" title="">Слоны</a>
-          <a href="#" title="">Интернет магазины</a>
-          <a href="#" title="">Каталоги</a>
-          <a href="#" title="">Слоны</a>
-          <a href="#" title="">Интернет магазины</a>
-          <a href="#" title="">Каталоги</a>
+        <!--end component protfolio detail-->
+
+        <!--start component reviews in detail item-->
+        <div class="reviews-in-detail">
+          <h2 class="component-header">Отзыв заказчка</h2>
+
           <div class="row">
-            <div class="current-tag">
-              * Слоны - это крупные проекты под ключ, сочетающие в себе работы сразу по нескольким видам услуг.
+            <div class="reviews-content">
+              <img src="./images/reviews-big.png" alt="">
+              <div class="props">
+                <div class="name">Дмитрий Иванов</div>
+                <div class="company">ООО Магнит</div>
+                <div class="post">Директор</div>
+              </div>
+
+            </div>
+            <div class="review-video">
+              <iframe src="" width="" height=""></iframe>
+            </div>
+            <div class="text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="row-detail-link text-center">
+              <a href="#" title="" class="detail-link-btn">Отзыв детально</a>
+            </div>
+          </div>
+
+        </div>
+        <!--end compmonent reviews in detail item-->
+
+        <div class="nav-row">
+          <div class="left-block nav-block">
+            <div class="row">
+              <a href="" title=""><i class="ic-arrow-nav-left"></i><span>Предыдущий элемент</span></a>
+            </div>
+            <div class="row">
+              <span class="nav-name">Текст ссылки</span>
+            </div>
+          </div>
+          <div class="right-block nav-block">
+            <div class="row">
+              <a href="#" title=""><span>Следующий элемент</span><i class="ic-arrow-nav-right"></i></a>
+            </div>
+            <div class="row">
+              <span class="nav-name">Текст ссылки</span>
             </div>
           </div>
         </div>
-        <!--end component tags list-->
+        <div class="row">
+          <div class="back-link-block">
+            <a href="#" title=""><i class="ic-arrow-nav-left"></i>Назад в список проектов</a>
+          </div>
+          <div class="soc-block">
 
-        <!--start component portfolio list-->
-        <div class="portfolio">
-          <div class="portfolio-list">
-            <!--foreach $arResult-->
-
-            <div class="item">
-              <div class="item-pic-wrapper" style="background-image:url(./images/p-market.png)">
-                <a class="item-content" href="./portfolio-detail.html">
-                  <div class="name">
-                    Прицеп маркет
-                  </div>
-                  <div class="text">
-                    Разработка логотипа Корпоративный сайт Оформление страниц в социальных сетя
-                  </div>
-                  <div class="detail-row">
-                    <span class="date">
-              2007 г.
-            </span>
-                    <span class="see-detail" title="">Подробнее</span>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="item-pic-wrapper" style="background-image:url(./images/p-market.png)">
-                <a class="item-content" href="./portfolio-detail.html">
-                  <div class="name">
-                    Прицеп маркет
-                  </div>
-                  <div class="text">
-                    Разработка логотипа Корпоративный сайт Оформление страниц в социальных сетя
-                  </div>
-                  <div class="detail-row">
-                    <span class="date">
-              2007 г.
-            </span>
-                    <span class="see-detail" title="">Подробнее</span>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="item-pic-wrapper" style="background-image:url(./images/p-market.png)">
-                <a class="item-content" href="./portfolio-detail.html">
-                  <div class="name">
-                    Прицеп маркет
-                  </div>
-                  <div class="text">
-                    Разработка логотипа Корпоративный сайт Оформление страниц в социальных сетя
-                  </div>
-                  <div class="detail-row">
-                    <span class="date">
-              2007 г.
-            </span>
-                    <span class="see-detail" title="">Подробнее</span>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="item-pic-wrapper" style="background-image:url(./images/p-market.png)">
-                <a class="item-content" href="./portfolio-detail.html">
-                  <div class="name">
-                    Прицеп маркет
-                  </div>
-                  <div class="text">
-                    Разработка логотипа Корпоративный сайт Оформление страниц в социальных сетя
-                  </div>
-                  <div class="detail-row">
-                    <span class="date">
-              2007 г.
-            </span>
-                    <span class="see-detail" title="">Подробнее</span>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="item-pic-wrapper" style="background-image:url(./images/p-market.png)">
-                <a class="item-content" href="./portfolio-detail.html">
-                  <div class="name">
-                    Прицеп маркет
-                  </div>
-                  <div class="text">
-                    Разработка логотипа Корпоративный сайт Оформление страниц в социальных сетя
-                  </div>
-                  <div class="detail-row">
-                    <span class="date">
-              2007 г.
-            </span>
-                    <span class="see-detail" title="">Подробнее</span>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="item">
-              <div class="item-pic-wrapper" style="background-image:url(./images/p-market.png)">
-                <a class="item-content" href="./portfolio-detail.html">
-                  <div class="name">
-                    Прицеп маркет
-                  </div>
-                  <div class="text">
-                    Разработка логотипа Корпоративный сайт Оформление страниц в социальных сетя
-                  </div>
-                  <div class="detail-row">
-                    <span class="date">
-              2007 г.
-            </span>
-                    <span class="see-detail" title="">Подробнее</span>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <!--endforeach-->
           </div>
         </div>
-        <!--end component portfolio list-->
 
-        <div class="about-text">
-          <p>Компания «Интеллект-Сервис» специализируется на разработке коммерческих сайтов различной сложности - от визиток и посадочных страниц до крупных интернет-магазинов и стартапов. Для разработки проектов мы используем CMS «1С-Битрикс», либо системы
-            собственной разработки. Также мы осуществляем последующее техническое сопровождение сайтов, а также проводим обучение клиентов по администрированию разработанных сайтов. Для разработки проектов мы используем CMS «1С-Битрикс».</p>
-
-          <p>Для разработки проектов мы используем CMS «1С-Битрикс», либо системы собственной разработки. Также мы осуществляем последующее техническое сопровождение сайтов, а также проводим обучение клиентов по администрированию разработанных сайтов.</p>
-        </div>
 
       </div>
       <div class="push"></div>

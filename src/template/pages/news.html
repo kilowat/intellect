@@ -1,0 +1,76 @@
+{% extends './../layouts/master.html' %}
+{% block content %}
+<div class="section-block text-center">
+  <h1 class="section-header">Новости</h1>
+  <div class="section-text">
+    Компания Интеллект-Сервис предоставляет полный спектр услуг<br>
+    по разработке и поддержке интернет-проектов
+  </div>
+</div>
+
+<!--start component news list-->
+<div class="news-cmp">
+  <div class="sort-row">
+    <div class="sort-block">
+      <select class="selectize" name="">
+        <option value="asc">Сначало свежие</option>
+        <option value="desc">Сначало старые</option>
+      </select>
+    </div>
+    <div class="current-tags">
+      Новость по тэгу: <span>SEO-продвижение</span>
+    </div>
+    <div class="search-tags">
+      <button type="button" name="tags-search" class="detail-link-btn">Найти новости по тэгам</button>
+    </div>
+  </div>
+  <div class="news-list">
+    <!--foreach $arResult-->
+    {% for item in items %}
+    <div class="item">
+      <a class="item-pic-wrapper badge-1" style="background-image:url({{item.img}})" title="" href="./news-detail.html">
+        <div class="text">
+          {{ item.text }}
+          <div class="bottom-row">
+            <span class="author">Иванов Иван</span>
+          </div>
+        </div>
+      </a>
+      <div class="name">
+        <a title="./news-detail.html" href="">{{item.name}}</a>
+      </div>
+      <div class="detail-row">
+        <span class="date">28 июня 2017&nbsp;&nbsp;&nbsp;12:38</span>
+        <span class="download-count"><i class="ic-view"></i> 12</span>
+      </div>
+    </div>
+    {% endfor %}
+    <!--endforeach-->
+  </div>
+</div>
+<!--end component news list-->
+
+<!--start component tags list-->
+<div class="tags-block tags-news">
+  <h2 class="component-header text-left"><i class="ic-tags"></i>Найти новости по тэгам</h2>
+
+  <a href="#" title="">Все проекты</a>
+  <a href="#" title="">Слоны</a>
+  <a href="#" title="">Интернет магазины</a>
+  <a href="#" title="">Каталоги</a>
+  <a href="#" title="">Слоны</a>
+  <a href="#" title="">Интернет магазины</a>
+  <a href="#" title="">Каталоги</a>
+  <a href="#" title="">Слоны</a>
+  <a href="#" title="">Интернет магазины</a>
+  <a href="#" title="">Каталоги</a>
+  <a href="#" title="">Слоны</a>
+  <a href="#" title="">Интернет магазины</a>
+  <a href="#" title="">Каталоги</a>
+  <a href="#" title="">Слоны</a>
+  <a href="#" title="">Интернет магазины</a>
+  <a href="#" title="">Каталоги</a>
+</div>
+<!--end component tags list-->
+
+{% endblock %}
