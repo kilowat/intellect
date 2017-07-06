@@ -1,0 +1,80 @@
+.service-detail{
+  .content-block{
+    @include clearfix;
+    .left-block{
+      float: left;
+      width: 58%;
+      margin-right: 2%;
+      .pic{
+        background-color: #ccc;
+        height: 260px;
+        margin-bottom: 25px;
+      }
+      .info-block{
+        >.row{
+          border-top:1px dotted;
+          border-bottom: 1px dotted;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          display: inline-block;
+        }
+        .price{
+          font-weight: 600;
+          margin-bottom: 3px;
+          font-size: 1.1rem;
+          color: $color-dark;
+        }
+        .dead-line{
+          font-weight: 100;
+          color: $color-dark;
+        }
+      }
+      .prop-list{
+        margin-top: 20px;
+        ul{
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          li{
+            margin-bottom: 10px;
+            font-weight: 100;
+            font-size: 0.95rem;
+            >*{
+              display: inline-block;
+              vertical-align: middle;
+            }
+            span{
+              width: 35px;
+            }
+          }
+        }
+      }
+    }
+    .right-block{
+      float: left;
+      width: 40%;
+      .form-block{
+        border:1px dotted #969696;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+        .row.form-header{
+          text-align: center;
+          color: $color-dark;
+          font-size: 0.95rem;
+          padding-left: 10%;
+          padding-right: 10%;
+          margin-bottom: 20px;
+        }
+        .row{
+          margin-bottom: 5px;
+        }
+        .button-row{
+          text-align: center;
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

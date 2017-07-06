@@ -1,24 +1,41 @@
 header{
   padding-top: 20px;
   padding-bottom: 20px;
+  @include breakpoint(max-width $desktop-width){
+    padding-top: 10px;
+  }
   .table{
     width: 100%;
     .table-cell{
       vertical-align: middle;
+      @include breakpoint(max-width $desktop-width){
+        display: inline-block;
+      }
     }
   }
   .header-row{
     @include container;
+    position: relative;
     .logo-block{
       width: span(3 of 12 0);
+      @include breakpoint(max-width $desktop-width){
+         width: 100%;
+         box-sizing: border-box;
+      }
       .logo{
-        padding-right: 10%;
+        padding-right: 5%;
+        @include breakpoint(max-width 500px){
+          padding-right: 0;
+        }
         a{
           color: #000;
           text-decoration: none;
           img{
             float: left;
             margin-right: 10px;
+            @include breakpoint(max-width 500px){
+              width: 35px;
+            }
           }
           .logo-content{
             position: relative;
@@ -33,6 +50,7 @@ header{
             .logo-slogan{
               font-weight: 100;
               font-size: 0.9rem;
+              display: block;
             }
           }
         }
@@ -40,10 +58,20 @@ header{
     }
     .search-block{
        width: span(5 at 4 of 12 0);
+       @include breakpoint(max-width $desktop-width){
+        display: none;
+       }
     }
     .user-block{
       width: span(4 at 5 of 12 last);
       text-align: right;
+      @include breakpoint(max-width $desktop-width){
+        margin-top: 20px;
+        width: 80;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+      }
       a{
         font-size: 0.9rem;
         text-decoration: none;
@@ -54,10 +82,16 @@ header{
         }
         margin-right: 2%;
         padding-right: 4%;
-
+        @include breakpoint(max-width 1030px){
+          margin-right: 0%;
+          padding-right: 3%;
+        }
         &:first-child{
           display: inline-block;
           border-right: 1px solid #e5e5e5;
+          @include breakpoint(max-width $desktop-width){
+            border-right: none;
+          }
         }
         &:last-child{
           margin-right: 0;
@@ -68,6 +102,9 @@ header{
         }
         span{
           border-bottom: 1px dashed;
+          @include breakpoint(max-width $desktop-width){
+            display: none;
+          }
         }
         &:hover{
           color: $link-hover-color;

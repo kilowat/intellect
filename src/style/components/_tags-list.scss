@@ -1,4 +1,7 @@
 .tags-block{
+  @include breakpoint(max-width $pad-width){
+    text-align: center;
+  }
   a{
     text-decoration: none;
     margin-right: 30px;

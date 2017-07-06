@@ -1,0 +1,32 @@
+.reviews-detail{
+  .content-block{
+    .pic{
+      float: left;
+      margin-right: 30px;
+    }
+    .name{
+      font-weight: 600;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    .post{
+      color: #b2b2b2;
+      font-weight: 100;
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+    .company{
+      font-weight: 100;
+      font-style: italic;
+    }
+    .detail-link-btn{
+      margin-top: 20px;
+    }
+    .date{
+      margin-top: 20px;
+      color: #b2b2b2;
+      font-weight: 100;
+      margin-bottom: 20px;
+    }
+  }
+}

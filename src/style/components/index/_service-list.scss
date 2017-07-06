@@ -2,8 +2,21 @@
   .service-list{
     display: flex;
     flex-wrap: wrap;
+    @include breakpoint(max-width 580px){
+      display: block;
+    }
     .item{
       @include span(1 of 3 0.02);
+
+      @include breakpoint(max-width $pad-width){
+        @include span(1 of 2 0.02);
+      }
+      @include breakpoint(max-width 580px){
+        float: none;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 10px;
+      }
       margin-bottom: 5px;
       background-size: contaier;
       background-position: center right;
@@ -13,8 +26,21 @@
       &:hover{
         background-color: #d6f0f3;
       }
-      &:nth-child(3n+3){
-        @include span(1 of 3 0.02 last);
+      @include breakpoint(min-width $pad-width){
+        &:nth-child(3n+3){
+          @include span(1 of 3 0.02 last);
+        }
+      }
+      @include breakpoint(max-width $pad-width){
+        &:nth-child(even){
+          @include span(1 of 2 0.02 last);
+        }
+      }
+      @include breakpoint(max-width 580px){
+        &:nth-child(even){
+          width: 100%;
+          float: none;
+        }
       }
       .item-wrapper{
         padding-top: 30px;

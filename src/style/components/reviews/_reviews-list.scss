@@ -7,11 +7,27 @@
       background-color: #f5f5f5;
       min-height: 250px;
       box-sizing: border-box;
+      @include breakpoint(max-width $pad-portet-width){
+        text-align: center;
+      }
+      @include breakpoint(max-width $phone-width){
+        @include gallery(1 of 2 0.02);
+      }
+      @include breakpoint(max-width $small-width){
+        margin-left: 0!important;
+        margin-right: 0!important;
+        width: 100%;
+        float: none;
+      }
       .item-wrapper{
         padding: 15px;
         .pic{
           float: left;
           margin-right: 10px;
+          @include breakpoint(max-width $pad-portet-width){
+            float: none;
+            width: 100%;
+          }
           img{
             border-radius: 100%;
           }

@@ -3,10 +3,28 @@
     @include clearfix;
     .item{
       @include gallery(1 of 3 0.03);
-      height: 250px;
+      min-height: 250px;
       margin-bottom: 4%;
       text-decoration: none;
       position: relative;
+      @include breakpoint(max-width 740px){
+        @include gallery(1 of 2 0.03);
+      }
+      @include breakpoint(max-width 500px){
+        margin-left: 0;
+        margin-right: 0;
+        float: none;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 20px;
+        width: 100%;
+        &:nth-child(n+1){
+          margin-left: 0;
+          margin-right: 0;
+          margin: auto;
+          margin-bottom: 20px;
+        }
+      }
       .item-pic-wrapper{
         text-decoration: none;
         display: block;
@@ -34,6 +52,9 @@
       .name{
         margin-top: 5px;
         margin-bottom: 5px;
+        @include breakpoint(max-width 500px){
+          font-size: 0.9rem;
+        }
         a{
             color: $color-dark;
             text-decoration: none;
@@ -52,6 +73,9 @@
         .download-count{
           float:right;
           padding-right: 10%;
+          @include breakpoint(max-width 500px){
+            padding-right: 0;
+          }
         }
       }
     }

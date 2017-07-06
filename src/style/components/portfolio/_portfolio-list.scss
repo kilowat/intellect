@@ -4,6 +4,16 @@
     .item{
       @include gallery(1 of 3 0.02);
       margin-bottom: 0.5%;
+      @include breakpoint(max-width $pad-portet-width){
+        @include gallery(1 of 2 0.02);
+      }
+      @include breakpoint(max-width 500px){
+        @include gallery(1 of 1);
+        margin-left:0!important;
+        margin-right: 0!important;
+        width: 100%;
+        float: none;
+      }
       .item-pic-wrapper{
         border:1px solid #d1d1d1;
         background-size: cover;

@@ -5,7 +5,7 @@ body{
 .wrapper{
   margin: auto;
   max-width: 1200px;
-  min-width: 1000px; //320px;
+  min-width: 320px;
   padding-left: 15px;
   padding-right: 15px;
   @include clearfix;
@@ -38,6 +38,10 @@ i{
 .content{
   width: 75%;
   float: left;
+  @include breakpoint(max-width $desktop-width){
+    width: 100%;
+    float: none;
+  }
 }
 main {
   min-height: 100%;

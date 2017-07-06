@@ -25,10 +25,19 @@
     @include clearfix;
     .item{
       @include gallery(1 of 3 0.03);
-      height: 250px;
+      min-height: 250px;
       margin-bottom: 4%;
       text-decoration: none;
       position: relative;
+      @include breakpoint(max-width $pad-portet-width){
+        @include gallery (1 of 2 0.03);
+      }
+      @include breakpoint(max-width $small-width){
+        margin-left: 0!important;
+        margin-right: 0!important;
+        width: 100%;
+      }
+
       .item-pic-wrapper{
         text-decoration: none;
         display: block;

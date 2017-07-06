@@ -8,6 +8,9 @@
   clear:both;
   margin-top: 1.2em;
   margin-bottom: 1.2em;
+  @include breakpoint(max-width $middle-width){
+    font-size: 1.3rem;
+  }
 }
 .section-block{
   margin-top: 50px;
@@ -17,6 +20,12 @@
   margin-right: auto;
   margin-bottom: 30px;
   width: 70%;
+  @include breakpoint(max-width $phone-width){
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+  }
   .section-header{
     margin:0;
     position: relative;
@@ -38,6 +47,9 @@ p{
   font-size: 0.95rem;
 }
 .text-formated{
+  @include breakpoint(max-width $phone-width){
+    text-align: center;
+  }
    *{
      color: #848484;
    }

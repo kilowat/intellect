@@ -1,4 +1,7 @@
 aside{
+  @include breakpoint(max-width $desktop-width){
+    display: none;
+  }
   float: left;
   width: 23%;
   padding-right: 2%;
@@ -69,7 +72,7 @@ aside{
           display: none;
           >li{
             >a{
-              font-weight: 100;
+              font-weight: 400;
             }
           }
         }

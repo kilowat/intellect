@@ -1,0 +1,33 @@
+.news-detail{
+  .info-row{
+    @include clearfix;
+    .news-info{
+      float: left;
+      .date{
+        margin-right: 50px;
+      }
+      .date,.view-count{
+        color: #b2b2b2;
+        font-size: 0.95rem;
+        font-weight: 100;
+      }
+      .view-count{
+        i{
+          margin-right: 5px;
+        }
+      }
+    }
+    .social-block{
+      float: right;
+    }
+  }
+  .tag-block{
+    .ic-tag-block{
+      float: left;
+    }
+  }
+  .tags-block{
+    margin-top: 50px;
+    margin-left: 30px;
+  }
+}

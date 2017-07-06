@@ -12,6 +12,12 @@
       height: 70px;
       @include gallery(1 of 6 0.05);
       margin-bottom: 0.7%;
+      @include breakpoint(max-width $phone-width){
+        @include gallery(1 of 4 0.05);
+      }
+      @include breakpoint(max-width $small-width){
+        @include gallery(1 of 3 0.05);        
+      }
       border: 1px solid transparent;
       &.active{
         border-color: $link-hover-color;
