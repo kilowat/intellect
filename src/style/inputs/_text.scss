@@ -12,9 +12,11 @@
     border-left-color: rgb(223, 223, 223);
     -webkit-border-radius: 4px;
     border-radius: 4px;
+    color: $color-dark;
+    font-weight: 100;
     &:focus{
-      border-color: #b5e99d;
-      -webkit-box-shadow: 0 0 2px 0 #85db5d;
-      box-shadow: 0 0 2px 0 #85db5d;
+      border-color: #2a92e5;
+      -webkit-box-shadow: 0 0 2px 0 #2a92e5;
+      box-shadow: 0 0 2px 0 #2a92e5;
     }
 }

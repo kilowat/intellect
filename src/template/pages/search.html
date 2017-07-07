@@ -1,0 +1,81 @@
+{% extends './../layouts/master.html' %}
+{% block content %}
+
+<div class="section-block text-center">
+  <h1 class="section-header">Поиск</h1>
+  <div class="section-text">
+    Компания Интеллект-Сервис предоставляет полный спектр услуг<br>
+    по разработке и поддержке интернет-проектов
+  </div>
+</div>
+
+<!--start component search-->
+<div class="search-page">
+  <div class="wrapper">
+    <div class="search-row">
+      <div class="table">
+        <div class="table-row">
+          <div class="table-cell">
+            <div class="search-input-wrapper">
+              <input type="text" name="" placeholder="Найти материал или нужную услугу" value="" id="search-input">
+              <button type="submit" class="search-btn" name="button"><i class="ic-search"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="search-query">
+        <div class="search-query-row">
+          <span class="search-label">По вашему запросу:</span> <span class="search-stirng">"<span id="search-phrase">Фильтрация</span>"</span>
+        </div>
+        <div class="search-result-row">
+          найдено <span id="search-count">46</span> результатов
+        </div>
+      </div>
+      <div class="order-block">
+        <select class="selectize" name="">
+          <option value="1">Сначало релеватные</option>
+          <option value="2">Сначало новые</option>
+        </select>
+      </div>
+    </div>
+    <div class="search-list">
+      <!--foreach $arResult-->
+      <div class="item">
+        <div class="pic">
+          <a href="#" title=""><img src="./images/news-img.jpg" alt=""></a>
+        </div>
+        <div class="name">
+          <a href="#" title="">Заголовок ссылки</a>
+        </div>
+        <div class="text">
+          Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Эта вопроса продолжил встретил но пунктуация, заглавных несколько своего подпоясал рукописи маленькая назад выйти образ над семантика это ты одна.
+        </div>
+        <div class="search-path">
+          <a href="#" title="">Главная</a> / <a href="#" title="">Информация</a>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="pic">
+          <a href="#" title=""><img src="./images/news-img.jpg" alt=""></a>
+        </div>
+        <div class="name">
+          <a href="#" title="">Заголовок ссылки</a>
+        </div>
+        <div class="text">
+          Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Эта вопроса продолжил встретил но пунктуация, заглавных несколько своего подпоясал рукописи маленькая назад выйти образ над семантика это ты одна.
+        </div>
+        <div class="search-path">
+          <a href="#" title="">Главная</a> / <a href="#" title="">Информация</a>
+        </div>
+      </div>
+      
+      <!--endforeach-->
+    </div>
+  </div>
+
+</div>
+<!--end component search-->
+{% endblock %}

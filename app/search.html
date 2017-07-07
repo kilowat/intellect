@@ -166,105 +166,83 @@
         </div>
 
 
-        <h1 class="section-header">Портфолио детальная</h1>
 
-        <!--start component portfolio detail-->
-        <div class="portfolio-detail">
-          <div class="main-block">
-            <div class="pic-block">
-              <a href="#" title="" class="fancybox"><img src="./images/gallery-normal.png" alt=""></a>
-            </div>
-            <div class="prop-block">
-              <div class="props">
-                <div class="prop-row">
-                  <span class="prop-name">Сдача проекта:</span><span class="prop-value">май 2017</span>
-                </div>
-                <div class="prop-row">
-                  <!--if array-->
-                  <div class="prop-name">Состав работ</div>
-                  <div class="prop-value-list">
-                    <!--foreach value-->
-                    <div class="prop-value">Разработка логотипа</div>
-                    <div class="prop-value">Разработка логотипа</div>
-                    <div class="prop-value">Разработка логотипа</div>
-                    <div class="prop-value">Разработка логотипа</div>
-                    <!--endforeach-->
+        <div class="section-block text-center">
+          <h1 class="section-header">Поиск</h1>
+          <div class="section-text">
+            Компания Интеллект-Сервис предоставляет полный спектр услуг<br> по разработке и поддержке интернет-проектов
+          </div>
+        </div>
+
+        <!--start component search-->
+        <div class="search-page">
+          <div class="wrapper">
+            <div class="search-row">
+              <div class="table">
+                <div class="table-row">
+                  <div class="table-cell">
+                    <div class="search-input-wrapper">
+                      <input type="text" name="" placeholder="Найти материал или нужную услугу" value="" id="search-input">
+                      <button type="submit" class="search-btn" name="button"><i class="ic-search"></i></button>
+                    </div>
                   </div>
                 </div>
-                <div class="prop-row project-link">
-                  <a href="#" title="">site.ru</a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="search-query">
+                <div class="search-query-row">
+                  <span class="search-label">По вашему запросу:</span> <span class="search-stirng">"<span id="search-phrase">Фильтрация</span>"</span>
+                </div>
+                <div class="search-result-row">
+                  найдено <span id="search-count">46</span> результатов
                 </div>
               </div>
+              <div class="order-block">
+                <select class="selectize" name="">
+          <option value="1">Сначало релеватные</option>
+          <option value="2">Сначало новые</option>
+        </select>
+              </div>
             </div>
-          </div>
-          <div class="text-formated detail-text">
-            <h2>Заголовок 2</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-              irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <figure>
-              <img src='./images/gallery-normal.png' alt='missing' />
-              <figcaption>Подпись к изображению</figcaption>
-            </figure>
-          </div>
-        </div>
-        <!--end component protfolio detail-->
-
-        <!--start component reviews in detail item-->
-        <div class="reviews-in-detail">
-          <h2 class="component-header">Отзыв заказчка</h2>
-
-          <div class="row">
-            <div class="reviews-content">
-              <img src="./images/reviews-big.png" alt="">
-              <div class="props">
-                <div class="name">Дмитрий Иванов</div>
-                <div class="company">ООО Магнит</div>
-                <div class="post">Директор</div>
+            <div class="search-list">
+              <!--foreach $arResult-->
+              <div class="item">
+                <div class="pic">
+                  <a href="#" title=""><img src="./images/news-img.jpg" alt=""></a>
+                </div>
+                <div class="name">
+                  <a href="#" title="">Заголовок ссылки</a>
+                </div>
+                <div class="text">
+                  Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Эта вопроса продолжил встретил но пунктуация, заглавных несколько своего подпоясал рукописи маленькая назад выйти образ над семантика это ты одна.
+                </div>
+                <div class="search-path">
+                  <a href="#" title="">Главная</a> / <a href="#" title="">Информация</a>
+                </div>
               </div>
 
-            </div>
-            <div class="review-video">
-              <iframe src="" width="" height=""></iframe>
-            </div>
-            <div class="text">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-            <div class="row-detail-link text-center">
-              <a href="#" title="" class="detail-link-btn">Отзыв детально</a>
+              <div class="item">
+                <div class="pic">
+                  <a href="#" title=""><img src="./images/news-img.jpg" alt=""></a>
+                </div>
+                <div class="name">
+                  <a href="#" title="">Заголовок ссылки</a>
+                </div>
+                <div class="text">
+                  Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Эта вопроса продолжил встретил но пунктуация, заглавных несколько своего подпоясал рукописи маленькая назад выйти образ над семантика это ты одна.
+                </div>
+                <div class="search-path">
+                  <a href="#" title="">Главная</a> / <a href="#" title="">Информация</a>
+                </div>
+              </div>
+
+              <!--endforeach-->
             </div>
           </div>
 
         </div>
-        <!--end compmonent reviews in detail item-->
-
-        <div class="nav-row">
-          <div class="left-block nav-block">
-            <div class="row">
-              <a href="" title=""><i class="ic-arrow-nav-left"></i><span>Предыдущий элемент</span></a>
-            </div>
-            <div class="row">
-              <span class="nav-name">Текст ссылки</span>
-            </div>
-          </div>
-          <div class="right-block nav-block">
-            <div class="row">
-              <a href="#" title=""><span>Следующий элемент</span><i class="ic-arrow-nav-right"></i></a>
-            </div>
-            <div class="row">
-              <span class="nav-name">Текст ссылки</span>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="back-link-block">
-            <a href="#" title=""><i class="ic-arrow-nav-left"></i>Назад в список проектов</a>
-          </div>
-          <div class="soc-block">
-
-          </div>
-        </div>
-
+        <!--end component search-->
 
       </div>
       <div class="push"></div>

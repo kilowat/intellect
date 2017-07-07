@@ -1,0 +1,109 @@
+{% extends './../layouts/master.html' %}
+{% block content %}
+
+<div class="section-block text-center">
+  <h1 class="section-header">Регистрация нового клиента</h1>
+  <div class="section-text">
+    Компания Интеллект-Сервис предоставляет полный спектр услуг<br>
+    по разработке и поддержке интернет-проектов
+  </div>
+</div>
+
+<!--start component register-->
+<div class="register">
+  <div class="register-form">
+    <form class="" action="index.html" method="post">
+      <div class="table">
+        <div class="table-row">
+          <div class="table-cell">
+            <label for="LAST_NAME">Фамилия:</label>
+          </div>
+          <div class="table-cell">
+            <input type="text" class="grey-input"  id="LAST_NAME" name="" value="">
+          </div>
+        </div>
+        <div class="table-row">
+          <div class="table-cell">
+            <label for="NAME">Имя:</label>
+          </div>
+          <div class="table-cell">
+            <input type="text" class="grey-input"  id="NAME" name="" value="">
+          </div>
+        </div>
+        <div class="table-row">
+          <div class="table-cell">
+            <label for="SECOND_NAME">Отчество:</label>
+          </div>
+          <div class="table-cell">
+            <input type="text" class="grey-input"  id="SECOND_NAME" name="" value="">
+          </div>
+        </div>
+        <div class="table-row">
+          <div class="table-cell">
+            <label for="NICK_NAME">Обращение:</label>
+          </div>
+          <div class="table-cell">
+            <input type="text" class="grey-input"  id="NICK_NAME" name="" value="">
+          </div>
+        </div>
+        <div class="table-row">
+          <div class="table-cell">
+            <label for="EMAIL">E-mail:</label>
+          </div>
+          <div class="table-cell requare-input">
+            <input type="text" class="grey-input"  id="EMAIL" name="" value="">
+          </div>
+        </div>
+        <div class="table-row">
+          <div class="table-cell">
+            <label for="LOGIN">Логин:</label>
+          </div>
+          <div class="table-cell requare-input">
+            <input type="text" class="grey-input"  id="LOGIN" name="" value="">
+          </div>
+        </div>
+        <div class="table-row">
+          <div class="table-cell">
+            <label for="PHONE">Номер телефона:</label>
+          </div>
+          <div class="table-cell requare-input">
+            <input type="text" class="grey-input"  id="PHONE" name="" value="">
+          </div>
+        </div>
+        <div class="table-row">
+          <div class="table-cell">
+            <label for="PASSWORD">Пароль:</label>
+          </div>
+          <div class="table-cell requare-input">
+            <input type="text" class="grey-input"  id="PASSWORD" name="" value="">
+          </div>
+        </div>
+        <div class="table-row">
+          <div class="table-cell">
+            <label for="PASSWORD_REPEAT">Повторить пароль:</label>
+          </div>
+          <div class="table-cell requare-input">
+            <input type="text" class="grey-input"  id="PASSWORD_REPEAT" name="" value="">
+          </div>
+        </div>
+        <div class="table-row button-row">
+          <div class="table-cell">
+          </div>
+          <div class="table-cell text-center">
+            <button type="submit" name="save" class="detail-link-btn" value="Y">Войти</button>
+          </div>
+        </div>
+        <div class="table-row button-row">
+          <div class="table-cell">
+          </div>
+          <div class="table-cell text-center">
+            <a href="#" title="Я забыл свой пароль">Я забыл свой пароль</a>
+            <a href="#" title="Я забыл свой пароль">Вход для клиентов</a>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<!--end component register-->
+{% endblock %}

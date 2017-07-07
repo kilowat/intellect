@@ -1,3 +1,6 @@
+.ic-star{
+  @include sprite($ic-star);
+}
 .ic-search{
   @include sprite($ic-search);
 }
