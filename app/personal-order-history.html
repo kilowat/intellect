@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Intellect</title>
+  <title></title>
   <!-- libs:css -->
   <link rel="stylesheet" href="./libs/bxslider/src/jquery.bxslider.css">
   <link rel="stylesheet" href="./libs/fancybox/css/jquery.fancybox.css">
@@ -167,86 +167,134 @@
 
 
 
-        <h1 class="section-header">Интернет магазины</h1>
-
-        <!--start component solutions items-->
-        <div class="solution-item">
-          <div class="solution-item-list">
-            <!--foreach $arResult-->
-
-            <div class="item promo-new">
-              <a class="item-pic-wrapper" style="background-image:url(./images/solution-pic.png)" title="" href="./solution-detail.html">
-                <div class="text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea...
-                </div>
-              </a>
-              <div class="name">
-                <a title="./solution-detail.html" href="">Интернет магазин строительных материалов...</a>
-              </div>
-              <div class="detail-row">
-                <span class="price">от 23 000 Р</span>
-                <span class="download-count"><i class="ic-download"></i> 12</span>
-              </div>
-            </div>
-
-            <div class="item promo-hit">
-              <a class="item-pic-wrapper" style="background-image:url(./images/solution-pic.png)" title="" href="./solution-detail.html">
-                <div class="text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea...
-                </div>
-              </a>
-              <div class="name">
-                <a title="./solution-detail.html" href="">Интернет магазин строительных материалов...</a>
-              </div>
-              <div class="detail-row">
-                <span class="price">от 23 000 Р</span>
-                <span class="download-count"><i class="ic-download"></i> 12</span>
-              </div>
-            </div>
-
-            <div class="item promo-sold">
-              <a class="item-pic-wrapper" style="background-image:url(./images/solution-pic.png)" title="" href="./solution-detail.html">
-                <div class="text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea...
-                </div>
-              </a>
-              <div class="name">
-                <a title="./solution-detail.html" href="">Интернет магазин строительных материалов...</a>
-              </div>
-              <div class="detail-row">
-                <span class="price">от 23 000 Р</span>
-                <span class="download-count"><i class="ic-download"></i> 12</span>
-              </div>
-            </div>
-
-            <div class="item promo-sold">
-              <a class="item-pic-wrapper" style="background-image:url(./images/solution-pic.png)" title="" href="./solution-detail.html">
-                <div class="text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea...
-                </div>
-              </a>
-              <div class="name">
-                <a title="./solution-detail.html" href="">Интернет магазин строительных материалов...</a>
-              </div>
-              <div class="detail-row">
-                <span class="price">от 23 000 Р</span>
-                <span class="download-count"><i class="ic-download"></i> 12</span>
-              </div>
-            </div>
-
-            <!--endforeach-->
+        <div class="section-block text-center">
+          <h1 class="section-header">История заявок</h1>
+          <div class="section-text">
+            Компания Интеллект-Сервис предоставляет полный спектр услуг<br> по разработке и поддержке интернет-проектов
           </div>
         </div>
-        <!--end component solutions items-->
-        <div class="about-text">
-          <p>Компания «Интеллект-Сервис» специализируется на разработке коммерческих сайтов различной сложности - от визиток и посадочных страниц до крупных интернет-магазинов и стартапов. Для разработки проектов мы используем CMS «1С-Битрикс», либо системы
-            собственной разработки. Также мы осуществляем последующее техническое сопровождение сайтов, а также проводим обучение клиентов по администрированию разработанных сайтов. Для разработки проектов мы используем CMS «1С-Битрикс».</p>
 
-          <p>Для разработки проектов мы используем CMS «1С-Битрикс», либо системы собственной разработки. Также мы осуществляем последующее техническое сопровождение сайтов, а также проводим обучение клиентов по администрированию разработанных сайтов.</p>
+        <!--start component order history-->
+        <div class="order-history">
+          <div class="order-history-list">
+            <!--foreach $arResult-->
+            <div class="item">
+              <div class="content-item">
+                <div class="content-block">
+                  <div class="table">
+                    <div class="table-row">
+                      <div class="table-cell order-id">
+                        Заказ № <a href="#" title="">123</a>
+                      </div>
+                      <div class="table-cell order-date">
+                        от 12.06.2017
+                      </div>
+                    </div>
+                    <div class="table-row">
+                      <div class="table-cell order-name">
+                        Способ оплаты
+                      </div>
+                      <div class="table-cell order-value">
+                        Наличными
+                      </div>
+                    </div>
+                    <div class="table-row">
+                      <div class="table-cell order-name">
+                        Сумма заказа
+                      </div>
+                      <div class="table-cell order-value">
+                        124 000 р
+                      </div>
+                    </div>
+                    <div class="table-row">
+                      <div class="table-cell order-name">
+                        Способ оплаты
+                      </div>
+                      <div class="table-cell order-value">
+                        Наличными
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="action-block">
+                  <div class="action-header">
+                    Действия с заказом
+                  </div>
+                  <div class="row">
+                    <a href="#" title="" class="detail-link-btn blue">Оплатить</a>
+                  </div>
+                  <div class="row">
+                    <a href="#" class="detail-link-btn red" title="">Отменить</a>
+                  </div>
+                  <div class="row">
+                    <a href="#" title="" class="detail-link-btn">Детали заказа</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="content-item">
+                <div class="content-block">
+                  <div class="table">
+                    <div class="table-row">
+                      <div class="table-cell order-id">
+                        Заказ № <a href="#" title="">123</a>
+                      </div>
+                      <div class="table-cell order-date">
+                        от 12.06.2017
+                      </div>
+                    </div>
+                    <div class="table-row">
+                      <div class="table-cell order-name">
+                        Способ оплаты
+                      </div>
+                      <div class="table-cell order-value">
+                        Наличными
+                      </div>
+                    </div>
+                    <div class="table-row">
+                      <div class="table-cell order-name">
+                        Сумма заказа
+                      </div>
+                      <div class="table-cell order-value">
+                        124 000 р
+                      </div>
+                    </div>
+                    <div class="table-row">
+                      <div class="table-cell order-name">
+                        Способ оплаты
+                      </div>
+                      <div class="table-cell order-value">
+                        Наличными
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="action-block">
+                  <div class="action-header">
+                    Действия с заказом
+                  </div>
+                  <div class="row">
+                    <a href="#" title="" class="detail-link-btn blue">Оплатить</a>
+                  </div>
+                  <div class="row">
+                    <a href="#" class="detail-link-btn red" title="">Отменить</a>
+                  </div>
+                  <div class="row">
+                    <a href="#" title="" class="detail-link-btn">Детали заказа</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!---endforeach-->
+          </div>
         </div>
-
       </div>
-      <div class="push"></div>
+      <!--end component order history-->
+
+    </div>
+    <div class="push"></div>
     </div>
   </main>
   <footer>

@@ -20,3 +20,87 @@
       box-shadow: 0 0 2px 0 #2a92e5;
     }
 }
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.grey-input{
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 45px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #dfdfdf;
+    border-top-color: rgb(223, 223, 223);
+    border-right-color: rgb(223, 223, 223);
+    border-bottom-color: rgb(223, 223, 223);
+    border-left-color: rgb(223, 223, 223);
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    color: $color-dark;
+    font-weight: 100;
+    &:focus{
+      border-color: #2a92e5;
+      -webkit-box-shadow: 0 0 2px 0 #2a92e5;
+      box-shadow: 0 0 2px 0 #2a92e5;
+    }
+}
+.inputfile + label {
+    color: #000;
+}
+
+.inputfile+ label {
+    padding: 0;
+}
+
+.inputfile:focus + label,
+.inputfile.has-focus + label,
+.inputfile + label:hover {
+
+}
+
+.inputfile + label span,
+.inputfile + label strong {
+    padding: 0.625rem 1.25rem;
+    /* 10px 20px */
+}
+.upload-input{
+  span{
+    color: #b2b2b2;
+    font-style: italic;
+    font-size: 0.9rem;
+    font-weight: 100;
+  }
+}
+
+.inputfile + label span {
+    min-height: 2em;
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.inputfile + label strong {
+    height: 100%;
+    color: #000;
+    display: block
+}
+
+.inputfile:focus + label strong,
+.inputfile.has-focus + label strong,
+.inputfile + label:hover strong {
+
+}
+
+@media screen and (max-width: 50em) {
+	.inputfile + label strong {
+		display: block;
+	}
+}

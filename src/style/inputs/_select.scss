@@ -265,3 +265,14 @@
   opacity: 0.5;
   background-color: #fafafa;
 }
+.selectize-grey{
+  .selectize-input{
+    border:1px solid #dfdfdf;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  .selectize-dropdown{
+    border:1px solid #dfdfdf;
+    box-sizing: border-box;
+  }
+}

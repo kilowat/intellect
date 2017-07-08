@@ -1,0 +1,78 @@
+.personal-edit{
+  h3{
+    font-weight: 500;
+    margin-top: 50px;
+    color: $header-color;
+    font-size: 1.4em;
+    @include breakpoint(max-width $pad-width){
+      font-size: 1.1em;
+    }
+  }
+  .grey-input{
+    border-radius: 0;
+  }
+  .content-block{
+    @include clearfix;
+    .left-block{
+      float: left;
+      width: 48%;
+      margin-right: 2%;
+      @include breakpoint(max-width $pad-width){
+        float: none;
+        margin-right: 0;
+        width: 100%;
+      }
+      .personal-form{
+        width: 100%;
+        .table-row{
+          .table-cell{
+            label{
+              font-weight: 100;
+              font-size: 0.95rem;
+            }
+            &:first-child{
+              text-align: right;
+              padding-right: 5px;
+              width: 125px;
+            }
+            padding-bottom: 5px;
+          }
+          h3{
+            margin-top: 50px;
+          }
+        }
+      }
+    }
+    .right-block{
+      .photo-block{
+        .pic{
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 15px;
+          img{
+            border-radius: 100%;
+            border:1px solid #dfdfdf;
+          }
+        }
+        .upload-input{
+          display: inline-block;
+          vertical-align: middle;
+          .upload-file{
+            label{
+              display: block;
+              position: relative;
+              span{
+
+              }
+            }
+          }
+        }
+        .soc-linked{
+          .soc-linked-text{
+            font-weight: 100;
+          }
+        }
+      }
+    }
+  }
+}
