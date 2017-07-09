@@ -1,3 +1,12 @@
+.ic-cancel{
+  @include sprite($ic-cancel);
+}
+.ic-confirm{
+  @include sprite($ic-confirm);
+}
+.ic-detail-circle{
+  @include sprite($ic-detail-circle);
+}
 .ic-star{
   @include sprite($ic-star);
 }

@@ -11,6 +11,25 @@
 
 <!--start component order history-->
 <div class="order-history">
+  <div class="sort-row">
+    <div class="sort-cell for-id">
+      <label for="SORT_ID">ID заказа:</label>
+      <input type="text" name="SORT_ID" class="grey-input" value="">
+    </div>
+    <div class="sort-cell for-date">
+      <label for="SORT_DATE">Дата заказа:</label>
+      <input type="text" class="grey-input" id="SORT_DATE" name="" value="">
+      <span>&mdash;</span>
+      <input type="text" class="grey-input" id="SORT_DATE_TO" name="" value="">
+    </div>
+    <div class="sort-cell for-status">
+      <label for="SORT_STATUS">По статусу:</label>
+      <select class="selectize-grey" name="">
+        <option value="ALL">Все</option>
+        <option value="CANCEL">Отмененные</option>
+      </select>
+    </div>
+  </div>
   <div class="order-history-list">
     <!--foreach $arResult-->
       <div class="item">
@@ -27,7 +46,7 @@
               </div>
               <div class="table-row">
                 <div class="table-cell order-name">
-                  Способ оплаты
+                  Способ оплаты:
                 </div>
                 <div class="table-cell order-value">
                   Наличными
@@ -35,7 +54,7 @@
               </div>
               <div class="table-row">
                 <div class="table-cell order-name">
-                  Сумма заказа
+                  Сумма заказа:
                 </div>
                 <div class="table-cell order-value">
                   124 000 р
@@ -43,7 +62,7 @@
               </div>
               <div class="table-row">
                 <div class="table-cell order-name">
-                  Способ оплаты
+                  Способ оплаты:
                 </div>
                 <div class="table-cell order-value">
                   Наличными
@@ -56,13 +75,13 @@
               Действия с заказом
             </div>
             <div class="row">
-              <a href="#" title="" class="detail-link-btn blue">Оплатить</a>
+              <a href="#" title="" class="detail-link-btn blue i-confirm"><i class="ic-confirm"></i>Оплатить</a>
             </div>
             <div class="row">
-              <a href="#" class="detail-link-btn red" title="">Отменить</a>
+              <a href="#" class="detail-link-btn red i-cancel" title=""><i class="ic-cancel"></i>Отменить</a>
             </div>
             <div class="row">
-              <a href="#" title="" class="detail-link-btn">Детали заказа</a>
+              <a href="#" title="" class="detail-link-btn grey i-detail-circle"><i class="ic-detail-circle"></i>Детали заказа</a>
             </div>
           </div>
         </div>

@@ -1,4 +1,43 @@
 .order-history{
+  .sort-row{
+    @include clearfix;
+    margin-bottom: 20px;
+    .sort-cell{
+      display: inline-block;
+      vertical-align: middle;
+      label{
+        font-weight: 100;
+      }
+      >*{
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .grey-input{
+        width: 90px;
+      }
+      .selectize-grey{
+        width: 130px;
+      }
+    }
+    .for-id{
+      margin-right: 3%;
+    }
+    .for-date{
+      @include breakpoint(max-width 511px){
+        margin-top: 10px;
+      }
+      span{
+        color: #dfdfdf;
+      }
+    }
+    .for-status{
+      float: right;
+      @include breakpoint(max-width $pad-portet-width){
+        float: none;
+        margin-top: 10px;
+      }
+    }
+  }
   .order-history-list{
     .item{
       background-color: #fafafa;
@@ -9,7 +48,16 @@
         @include clearfix;
         .content-block{
           float: left;
-          width: 30%;
+          width: 50%;
+          @include breakpoint(max-width $phone-width){
+            float: none;
+            margin-bottom: 10px;
+            width: 100%;
+            text-align: center;
+            .table{
+              margin: auto;
+            }
+          }
           .order-id{
             padding-bottom: 20px;
             font-weight: 600;
@@ -18,7 +66,6 @@
           }
           .order-date{
             font-weight: 100;
-            font-size: 0.95rem;
           }
           .order-name{
             padding-right: 15px;
@@ -28,6 +75,7 @@
           }
           .order-value{
             text-align: left;
+            color: #4f4f4f;
           }
         }
         .action-block{
@@ -35,17 +83,49 @@
           width: 160px;
           text-align: right;
           padding-right: 5%;
+          @include breakpoint(max-width $phone-width){
+            float: none;
+            margin-top: 10px;
+            text-align: center;
+            padding-right: 0;
+            margin: auto;
+          }
           .action-header{
             text-align: left;
             font-weight: 100;
             font-size: 0.95rem;
             margin-bottom: 15px;
           }
+          .row{
+            height: 45px;
+          }
           a{
             width: 100%;
             text-align: left;
             margin-bottom: 8px;
             font-size: 0.9rem;
+            i{
+              margin-right: 5px;
+            }
+            &.i-confirm:hover{
+              i{
+                @include sprite($ic-confirm-hover);
+              }
+            }
+            &.i-cancel:hover{
+              i{
+                @include sprite($ic-cancel-hover);
+              }
+            }
+            &.i-detail-circle:hover{
+              i{
+                @include sprite($ic-detail-circle-hover);
+              }
+            }
+            >*{
+              display: inline-block;
+              vertical-align: middle;
+            }
           }
         }
       }
