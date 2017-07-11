@@ -1,0 +1,129 @@
+.order-detail{
+  .prop-header{
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    margin-top: 40px;
+    >*{
+      display: inline-block;
+      vertical-align: middle;
+    }
+    span{
+      width: 30px;
+      margin-right: 5px;
+    }
+  }
+  .content-block{
+    @include clearfix;
+    .prop-block{
+      float: left;
+    }
+    .row{
+      &:first-child{
+        .prop-header{
+          margin-top: 0;
+        }
+      }
+      .prop-list{
+        .table{
+          .table-row{
+            .table-cell{
+              padding-bottom: 10px;
+              font-size: 0.95rem;
+              &:first-child{
+                font-weight: 100;
+                text-align: right;
+                padding-right: 10px;
+              }
+              &:last-child{
+                width: 300px;
+                text-align: left;
+              }
+            }
+          }
+        }
+      }
+      .doc-link-list{
+        div{
+          margin-bottom: 7px;
+          font-size: 0.95rem;
+          a{
+            font-weight: 100;
+          }
+        }
+      }
+    }
+    .action-block{
+      float: right;
+      .buttons-row{
+        margin-bottom: 10px;
+        a{
+          text-align: left;
+          width: 100%;
+          span{
+            width: 20px;
+          }
+          &.confirm:hover{
+            i{
+              @include sprite($ic-confirm-hover);
+            }
+          }
+          &.cancel:hover{
+            i{
+              @include sprite($ic-cancel-hover);
+            }
+          }
+        }
+      }
+    }
+  }
+  .order-items{
+    margin-top:40px;
+    font-size: 0.95rem;
+    .table{
+      width: 100%;
+    }
+    .table-cell{
+      padding: 10px;
+      vertical-align: middle;
+      font-weight: 100;
+      &:nth-child(2){
+        font-weight: 400;
+      }
+    }
+    .header-row{
+      .table-cell{
+        font-weight: 100;
+      }
+    }
+    .body-row{
+      .table-cell{
+        background-color: #fafafa;
+        border-top:1px dotted;
+        border-bottom: 1px dotted;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        &:first-child{
+          border-left:1px dotted;
+        }
+        &:last-child{
+          border-right: 1px dotted;
+        }
+      }
+    }
+    .seporat-row{
+      .table-cell{
+        padding-top:3px;
+        padding-bottom: 3px;
+      }
+    }
+    .footer-row{
+      text-align: center;
+      margin-top: 20px;
+      font-size: 1rem;
+      .total-sum-block{
+        float: left;
+      }
+    }
+
+  }
+}

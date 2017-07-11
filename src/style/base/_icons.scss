@@ -1,3 +1,44 @@
+
+.menu-icon{
+  cursor: pointer;
+  >*{
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .ic-menu{
+    @include sprite($ic-menu);
+  }
+  .ic-menu-arrow{
+    @include sprite($ic-menu-arrow);
+  }
+  &:hover, &.selected{
+    .ic-menu{
+      cursor: pointer;
+      @include sprite($ic-menu-hover);
+    }
+    .ic-menu-arrow{
+      @include sprite($ic-menu-arrow-hover);
+    }
+  }
+}
+.ic-main-data{
+  @include sprite($ic-main-data);
+}
+.ic-service{
+  @include sprite($ic-service);
+}
+.ic-order{
+  @include sprite($ic-order);
+}
+.ic-pay{
+  @include sprite($ic-pay);
+}
+.ic-doc{
+  @include sprite($ic-doc);
+}
+.ic-buyer{
+  @include sprite($ic-buyer);
+}
 .ic-cancel{
   @include sprite($ic-cancel);
 }
