@@ -1,0 +1,195 @@
+{% extends './../layouts/master.html' %}
+{% block content %}
+<div class="section-block text-center">
+  <h1 class="section-header">Служба поддержки</h1>
+  <div class="section-text">
+    Компания Интеллект-Сервис предоставляет полный спектр услуг<br>
+    по разработке и поддержке интернет-проектов
+  </div>
+</div>
+
+<!--start component support list-->
+<div class="support">
+  <div class="support-filter">
+    <h3>Поиск обращений</h3>
+    <div class="row search-row">
+      <div class="input-cell">
+        <div class="table">
+          <div class="table-row">
+            <div class="table-cell">
+              <label for="name-text">Заголовок/Текст:</label>
+            </div>
+            <div class="table-cell">
+              <input type="text" name="" class="grey-input" id="name-text" value="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="input-cell">
+        <div class="table">
+          <div class="table-row">
+            <div class="table-cell">
+              <label for="req-id">ID бращения:</label>
+            </div>
+            <div class="table-cell">
+              <input type="text" class="grey-input" id="req-id" name="" value="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row filter-row">
+
+      <div class="input-cell">
+        <div class="table">
+          <div class="table-row">
+            <div class="table-cell">
+              <label for="status-filter">Индикатор:</label>
+            </div>
+            <div class="table-cell">
+              <select class="selectize-grey" name="">
+                <option value="blue">1</option>
+                <option value="red">2</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="input-cell">
+        <div class="table">
+          <div class="table-row">
+            <div class="table-cell">
+              <label for="close-filter">Открыто/Закрыто:</label>
+            </div>
+            <div class="table-cell">
+              <select class="selectize-grey" name="">
+                <option value="open">Открыто</option>
+                <option value="close">Закрыто</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="input-cell">
+        <button type="button" class="detail-link-btn grey" name="button">Найти обращение</button>
+      </div>
+    </div>
+  </div>
+  <div class="row button-row">
+    <button type="button" class="detail-link-btn blue"  name="button"><i class="ic-add"></i>Создать новое обращение</button>
+  </div>
+  <div class="support-list">
+    <div class="table">
+
+    <!--foreach $arResult-->
+      <a class="table-row body-row" href="#" title="">
+        <div class="table-cell">
+          <i class="ic-circle-red"></i>
+        </div>
+        <div class="table-cell">
+          <div class="service-name">
+            Не работает авторизация через социальные сети и интернет сервисы
+          </div>
+          <div class="support-status">
+            Статус: получен ответ
+          </div>
+          <div class="support-id">
+            ID обращения: 12
+          </div>
+          <div class="support-dialog-count">
+            Сообщений в диалоге: 22
+          </div>
+        </div>
+        <div class="table-cell">
+          <div class="support-modifier">
+            Последние изменение: Клиент магазина
+          </div>
+          <div class="support-author-name">Александр Петровы 05.11.2017 22:22:11</div>
+        </div>
+      </a>
+      <div class="table-row seporat-row">
+        <div class="table-cell"></div>
+      </div>
+
+      <div class="table-row body-row">
+        <div class="table-cell">
+          <i class="ic-circle-red"></i>
+        </div>
+        <div class="table-cell">
+          <div class="service-name">
+            Не работает авторизация через социальные сети и интернет сервисы
+          </div>
+          <div class="support-status">
+            Статус: получен ответ
+          </div>
+          <div class="support-id">
+            ID обращения: 12
+          </div>
+          <div class="support-dialog-count">
+            Сообщений в диалоге: 22
+          </div>
+        </div>
+        <div class="table-cell">
+          <div class="support-modifier">
+            Последние изменение: Клиент магазина
+          </div>
+          <div class="support-author-name">Александр Петровы 05.11.2017 22:22:11</div>
+        </div>
+      </div>
+      <div class="table-row seporat-row">
+        <div class="table-cell"></div>
+      </div>
+
+      <div class="table-row body-row">
+        <div class="table-cell">
+          <i class="ic-circle-red"></i>
+        </div>
+        <div class="table-cell">
+          <div class="service-name">
+            Не работает авторизация через социальные сети и интернет сервисы
+          </div>
+          <div class="support-status">
+            Статус: получен ответ
+          </div>
+          <div class="support-id">
+            ID обращения: 12
+          </div>
+          <div class="support-dialog-count">
+            Сообщений в диалоге: 22
+          </div>
+        </div>
+        <div class="table-cell">
+          <div class="support-modifier">
+            Последние изменение: Клиент магазина
+          </div>
+          <div class="support-author-name">Александр Петровы 05.11.2017 22:22:11</div>
+        </div>
+      </div>
+      <div class="table-row seporat-row">
+        <div class="table-cell"></div>
+      </div>
+
+    </div>
+    <!--endforeach-->
+  </div>
+  <div class="bottom-row">
+    <div class="support-count">
+      Всего обращений: 365
+    </div>
+  </div>
+  <div class="support-legend">
+    <div class="">
+      <i class="ic-circle-blue"></i>Последний раз в обращение писали вы
+    </div>
+    <div class="">
+      <i class="ic-circle-red"></i>Последний раз в обращение писал сотрудник поддержки
+    </div>
+    <div class="">
+      <i class="ic-circle-grey"></i>Обращение закрыто
+    </div>
+  </div>
+</div>
+<!--end component support list-->
+
+{% endblock %}

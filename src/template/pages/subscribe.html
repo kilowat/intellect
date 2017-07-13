@@ -1,0 +1,71 @@
+{% extends './../layouts/master.html' %}
+{% block content %}
+<div class="section-block text-center">
+  <h1 class="section-header">Подписка</h1>
+  <div class="section-text">
+    Компания Интеллект-Сервис предоставляет полный спектр услуг<br>
+    по разработке и поддержке интернет-проектов
+  </div>
+</div>
+
+<!--start component subscribe-->
+<div class="subscribe">
+  <h3>Настройка адреса электронной рассылки</h3>
+  <div class="row input-email-block">
+    <div class="table">
+      <div class="table-row">
+        <div class="table-cell">
+          <label for="">E-mail для подписок:</label>
+        </div>
+        <div class="table-cell requare-input">
+          <input type="text" class="grey-input" name="" value="">
+        </div>
+        <div class="table-cell tip-cell">
+          <i class="ic-info-tip vtip" title="Введите уникальный и действующий адрес
+электронной почты. Она будет привязана
+к вашей учетной записи в качестве адреса
+для подписок"></i>
+        </div>
+      </div>
+    </div>
+    <div class="descr-text">
+      После добавления или изменения адреса подписки вам будет выслан код подтверждения.<br>
+Подписка будет не активной до активации кода подтверждения.
+    </div>
+  </div>
+  <div class="row">
+    <div class="rubric-block">
+      <h3>Рубрики рассылок</h3>
+      <span class="rubric-descr">Выберите одну или несколько рубрик подписки</span>
+      <div class="rubric-list">
+        <div class="rubric-item">
+          <input type="checkbox" class="chekcer"><label for="">Новости услуги</label>
+        </div>
+        <div class="rubric-item">
+          <input type="checkbox" class="chekcer"><label for="">Новости компании</label>
+        </div>
+        <div class="rubric-item">
+          <input type="checkbox" class="chekcer"><label for="">Новости</label>
+        </div>
+        <div class="rubric-item">
+          <input type="checkbox" class="chekcer"><label for="">Новости</label>
+        </div>
+      </div>
+    </div>
+    <div class="rubric-format">
+      <h3>Предпочитаемый формат доставки</h3>
+      <div class="format-list">
+        <div class="format-item">
+          <input type="radio" class="chekcer" checked="checked" name="format" value="text">
+          <label for="">Простой текст</label>
+        </div>
+        <div class="format-item">
+          <input type="radio" class="chekcer" name="format" value="html">
+          <label for="">HTML-формат</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--end component subscribe-->
+{% endblock %}

@@ -67,15 +67,8 @@ p{
    b{
      color: #848484;
    }
-   h2{
-     font-size: 1.6em;
-   }
-   h3{
-     font-size: 1.4em;
-   }
+
    h2,h3{
-     color: $color-dark;
-     font-weight: 400;
      text-align: center;
    }
    img{
@@ -101,5 +94,15 @@ p{
   font-weight: 100;
 }
 .text-normal{
+  font-weight: 400;
+}
+h2{
+  font-size: 1.6em;
+}
+h3{
+  font-size: 1.3em;
+}
+h2,h3{
+  color: $color-dark;
   font-weight: 400;
 }

@@ -10,16 +10,6 @@
     .table{
       width: 100%;
     }
-    .requare-input{
-      position: relative;
-      &:after{
-        position: absolute;
-        left: -13px;
-        top: 8px;
-        content: "";
-        @include sprite($ic-star);
-      }
-    }
     .table-row{
       .table-cell{
         padding-bottom: 5px;

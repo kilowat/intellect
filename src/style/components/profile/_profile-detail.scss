@@ -1,0 +1,62 @@
+.profile-detail{
+  .prop-header{
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    margin-top: 40px;
+  }
+  .content-block{
+    @include clearfix;
+    .prop-block{
+      float: left;
+    }
+    .row{
+      &:first-child{
+        .prop-header{
+          margin-top: 0;
+        }
+      }
+      .prop-list{
+        .table{
+          .table-row{
+            .table-cell{
+              padding-bottom: 10px;
+              font-size: 0.95rem;
+              &:first-child{
+                font-weight: 100;
+                text-align: right;
+                padding-right: 10px;
+              }
+              &:last-child{
+                width: 300px;
+                text-align: left;
+              }
+            }
+          }
+        }
+      }
+    }
+    .action-block{
+      float: right;
+      .buttons-row{
+        margin-bottom: 10px;
+        a{
+          text-align: left;
+          width: 100%;
+          span{
+            width: 25px;
+          }
+          &.confirm:hover{
+            i{
+              @include sprite($ic-dialog-round-hover);
+            }
+          }
+          &.cancel:hover{
+            i{
+              @include sprite($ic-cancel-hover);
+            }
+          }
+        }
+      }
+    }
+  }
+}

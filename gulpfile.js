@@ -37,7 +37,8 @@ var libs = {
   formValidator: libsPath.formValidator,
   select:libsPath.select,
   fancybox:libsPath.fancybox,
-  //icheck:libsPath.icheck,
+  icheck:libsPath.icheck,
+  vtip:libsPath.vtip,
   //placeholder:libsPath.placeholder,
   //fullpage:libsPath.fullpage,
 };

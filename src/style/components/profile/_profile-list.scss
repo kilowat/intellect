@@ -1,4 +1,17 @@
 .profile-list{
+  .add-button-row{
+    margin-bottom: 10px;
+    .detail-link-btn{
+      i{
+        margin-right: 5px;
+      }
+    }
+    .detail-link-btn:hover{
+      i{
+        @include sprite($ic-add-hover);
+      }
+    }
+  }
   .table{
     width: 100%;
     color: #4f4f4f;
@@ -68,16 +81,26 @@
       text-align: left;
       position: absolute;
       background-color: #fff;
-      padding: 10px;
-      padding-left: 15px;
-      padding-right: 15px;
       right: -15px;
       z-index: 1;
       top: 33px;
+      &:after{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        content: "";
+        background-color: transparent;
+        z-index: 1;
+        top:-15px;
+        right:15px;
+      }
       ul{
         list-style: none;
         margin: 0;
-        padding: 0;
+        padding: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
         li{
           margin-bottom: 10px;
           a{
@@ -93,7 +116,7 @@
     	border: 1px solid #dfdfdf;
     }
     .arrow-div:after, .arrow-div:before {
-    	bottom: 100%;
+    	bottom: 99%;
     	left: 72%;
     	border: solid transparent;
     	content: " ";

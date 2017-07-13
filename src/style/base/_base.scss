@@ -1,6 +1,7 @@
 body{
  font-family: $font-opensans;
  font-size: $font-size;
+ color: #2a2a28;
 }
 .wrapper{
   margin: auto;
@@ -118,5 +119,15 @@ a{
     i{
       margin-right: 5px;
     }
+  }
+}
+.requare-input{
+  position: relative;
+  &:after{
+    position: absolute;
+    left: -13px;
+    top: 8px;
+    content: "";
+    @include sprite($ic-star);
   }
 }

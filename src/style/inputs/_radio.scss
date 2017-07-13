@@ -11,10 +11,10 @@
   border: 1px solid #b8b8ba;
   border-radius: 5px;
   &.checked {
-    border-color: #e43130;
+    border-color: $link-hover-color;
     position: relative;
     &:after {
-      background: #e43130 none repeat scroll 0 0;
+      background: $link-hover-color none repeat scroll 0 0;
       content: "";
       height: 2px;
       left: 1px;
@@ -24,7 +24,7 @@
       top: 7px;
     }
     &:before {
-      background: #e43130 none repeat scroll 0 0;
+      background: $link-hover-color none repeat scroll 0 0;
       content: "";
       height: 2px;
       left: 6px;
@@ -50,13 +50,13 @@
   height: 15px;
   border: none;
   cursor: pointer;
-  border: 1px solid #bebec0;
+  border: 1px solid #e8e8e8;
   border-radius: 100%;
   position: relative;
   &.checked {
-    border-color: #e43130;
+    border-color: $link-hover-color;
     &:after {
-      background-color: #e43130;
+      background-color: $link-hover-color;
       border-radius: 100%;
       content: "";
       display: block;

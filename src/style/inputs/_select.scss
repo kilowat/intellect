@@ -103,6 +103,12 @@
   cursor: text;
   display: inline-block;
 }
+.selectize-dropdown{
+
+}
+.selectize-dropdown-content{
+  box-sizing: border-box;
+}
 .selectize-input {
   padding: 8px 8px;
   display: inline-block;
@@ -114,8 +120,11 @@
     display: none!important;
   }
   .item{
-    padding-right: 10px;
+
   }
+}
+.selectize-control.single .selectize-input{
+      padding-right: 40px;
 }
 .selectize-control.multi .selectize-input.has-items {
   padding: 6px 8px 3px;

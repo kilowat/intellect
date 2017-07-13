@@ -1,0 +1,93 @@
+/* TipTip CSS - Version 1.2 */
+
+#tiptip_holder {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+}
+
+#tiptip_holder.tip_top {
+  padding-bottom: 5px;
+}
+
+#tiptip_holder.tip_bottom {
+  padding-top: 5px;
+}
+
+#tiptip_holder.tip_right {
+  padding-left: 5px;
+}
+
+#tiptip_holder.tip_left {
+  padding-right: 5px;
+}
+
+#tiptip_content {
+  text-align: left;
+  font-size: 0.95rem;
+  font-style: italic;
+  line-height: 1.2rem;
+  font-weight: 100;
+  color: #b8b8b8;
+  padding: 10px;
+  background-color: #fff;
+  border:1px dotted #cfcfcf;
+}
+
+#tiptip_arrow, #tiptip_arrow_inner {
+  position: absolute;
+
+}
+
+#tiptip_holder.tip_top #tiptip_arrow {
+
+}
+
+#tiptip_holder.tip_bottom #tiptip_arrow {
+
+}
+
+#tiptip_holder.tip_right #tiptip_arrow {
+
+
+}
+
+#tiptip_holder.tip_left #tiptip_arrow {
+
+}
+
+#tiptip_holder.tip_top #tiptip_arrow_inner {
+  margin-top: -7px;
+
+}
+
+#tiptip_holder.tip_bottom #tiptip_arrow_inner {
+  margin-top: -5px;
+
+
+}
+
+#tiptip_holder.tip_right #tiptip_arrow_inner {
+  margin-top: -6px;
+  @include sprite($ic-arrow-dotted);
+}
+
+#tiptip_holder.tip_left #tiptip_arrow_inner {
+  margin-top: -6px;
+
+}
+
+/* Webkit Hacks  */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  #tiptip_content {
+
+  }
+  #tiptip_holder.tip_bottom #tiptip_arrow_inner {
+
+  }
+  #tiptip_holder.tip_top #tiptip_arrow_inner {
+
+  }
+}

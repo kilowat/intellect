@@ -1,0 +1,152 @@
+{% extends './../layouts/master.html' %}
+{% block content %}
+
+
+<h1 class="section-header">Профиль редактирование</h1>
+
+<!--start component profile edit-->
+<div class="profile-edit">
+  <div class="profile-info">
+    <div class="table">
+      <div class="table-row">
+        <div class="table-cell">
+          Название профиля
+        </div>
+        <div class="table-cell">
+          Комерческая организация
+        </div>
+      </div>
+      <div class="table-row">
+        <div class="table-cell">
+          Тип профиля:
+        </div>
+        <div class="table-cell">
+          Юр лицо
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="profile-input-block">
+
+    <div class="profile-input-item">
+      <div class="profile-item-header">
+        Данные компании
+      </div>
+      <div class="table">
+        <div class="table-row">
+          <div class="table-cell">
+            <label for="profile-input-0">Название компании:</label>
+          </div>
+          <div class="table-cell">
+            <input type="text" name="" class="grey-input" id="profile-input-0" value="ООО Компания">
+          </div>
+        </div>
+        <div class="table-row">
+          <div class="table-cell">
+            <label for="profile-input-1">ИНН:</label>
+          </div>
+          <div class="table-cell">
+            <input type="text" name="" class="grey-input" id="profile-input-1" value="1234556">
+          </div>
+        </div>
+        <div class="table-row">
+          <div class="table-cell">
+            <label for="profile-input-1">КПП:</label>
+          </div>
+          <div class="table-cell">
+            <input type="text" name="" class="grey-input" id="profile-input-1" value="1234556">
+          </div>
+        </div>
+        <div class="table-row">
+          <div class="table-cell">
+            <label for="profile-input-1">ОГРН:</label>
+          </div>
+          <div class="table-cell">
+            <input type="text" name="" class="grey-input" id="profile-input-1" value="1234556">
+          </div>
+        </div>
+        <div class="table-row">
+          <div class="table-cell">
+            <label for="profile-input-1">Юридический адрес:</label>
+          </div>
+          <div class="table-cell">
+            <textarea name="name" id="" class="grey-input">35000, Краснодарский край, г. Краснодар, ул. Красная д144</textarea>
+          </div>
+        </div>
+        <div class="table-row">
+          <div class="table-cell">
+            <label for="profile-input-1">Почтовый адрес:</label>
+          </div>
+          <div class="table-cell">
+            <textarea class="grey-input" name="name" id="">35000, Краснодарский край, г. Краснодар, ул. Красная д144</textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="profile-input-item">
+
+      <div class="profile-item-header">
+        Данные компании
+      </div>
+
+      <div class="table">
+        <div class="table-row">
+          <div class="table-cell">
+            <label for="profile-input-0">Телефон:</label>
+          </div>
+          <div class="table-cell">
+            <input type="text" name="" class="grey-input" id="profile-input-0" value="+6 861 23 453 22">
+          </div>
+        </div>
+        <div class="table-row">
+          <div class="table-cell">
+            <label for="profile-input-0">E-mail:</label>
+          </div>
+          <div class="table-cell">
+            <input type="text" name="" class="grey-input" id="profile-input-0" value="test@mai.ru">
+          </div>
+        </div>
+        <div class="table-row">
+          <div class="table-cell">
+            <label for="profile-input-0">Фамилия:</label>
+          </div>
+          <div class="table-cell">
+            <input type="text" name="" class="grey-input" id="profile-input-0" value="Иванов">
+          </div>
+        </div>
+        <div class="table-row">
+          <div class="table-cell">
+            <label for="profile-input-0">Имя:</label>
+          </div>
+          <div class="table-cell">
+            <input type="text" name="" class="grey-input" id="profile-input-0" value="Иван">
+          </div>
+        </div>
+        <div class="table-row">
+          <div class="table-cell">
+            <label for="profile-input-0">Отчество:</label>
+          </div>
+          <div class="table-cell">
+            <input type="text" name="" class="grey-input" id="profile-input-0" value="Иванович">
+          </div>
+        </div>
+        <div class="table-row">
+          <div class="table-cell">
+
+          </div>
+          <div class="table-cell text-center">
+            <button type="submit" class="detail-link-btn blue" name="button">Сохранить</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<!--end component profile edit-->
+
+{% endblock %}

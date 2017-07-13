@@ -1,4 +1,27 @@
-
+.ic-circle-blue,div[data-value="blue"]{
+  height: 20px;
+  width: 20px;
+  border:1px solid #68b2ed;
+  border-radius: 100%;
+  font-size: 0;
+  padding: 0!important;
+}
+.ic-circle-red,div[data-value="red"]{
+  height: 20px;
+  width: 20px;
+  border:1px solid #de5c50;
+  border-radius: 100%;
+  font-size: 0;
+  padding: 0!important;
+}
+.ic-circle-grey,div[data-value="grey"]{
+  height: 20px;
+  width: 20px;
+  border:1px solid #545454;
+  border-radius: 100%;
+  font-size: 0;
+  padding: 0!important;
+}
 .menu-icon{
   cursor: pointer;
   >*{
@@ -20,6 +43,16 @@
       @include sprite($ic-menu-arrow-hover);
     }
   }
+}
+.ic-info-tip{
+  cursor: pointer;
+  @include sprite($ic-info-tip);
+}
+.ic-add{
+  @include sprite($ic-add);
+}
+.ic-dialog-round{
+  @include sprite($ic-dialog-round);
 }
 .ic-main-data{
   @include sprite($ic-main-data);

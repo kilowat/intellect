@@ -109,5 +109,10 @@
 		"js": [
 			"src/libs/placeholder/jquery.textPlaceholder.js"
 		]
+	},
+	"vtip":{
+		"js":[
+			"src/libs/vtip/js/vtip.js"
+		]
 	}
 }

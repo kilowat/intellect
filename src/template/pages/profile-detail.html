@@ -1,0 +1,58 @@
+{% extends './../layouts/master.html' %}
+{% block content %}
+
+
+<h1 class="section-header">Профиль детальная</h1>
+
+<!--start component profile detail-->
+<div class="profile-detail">
+  <div class="content-block">
+    <div class="prop-block">
+
+      <div class="row">
+        <div class="prop-header">Общие данные</div>
+        <div class="prop-list">
+          <div class="table">
+            <div class="table-row">
+              <div class="table-cell">
+                Дата создания заказа
+              </div>
+              <div class="table-cell">
+                12.05.2017
+              </div>
+            </div>
+            <div class="table-row">
+              <div class="table-cell">
+                Сумма заказа
+              </div>
+              <div class="table-cell">
+                324 500 Р
+              </div>
+            </div>
+            <div class="table-row">
+              <div class="table-cell">
+                Статус заказа:
+              </div>
+              <div class="table-cell">
+                Выполнен (10.02.2017)
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="action-block">
+      <div class="buttons-row ">
+        <a href="#" title="" class="detail-link-btn blue confirm"><span><i class="ic-dialog-round"></i></span>Редактировать</a>
+      </div>
+      <div class="buttons-row ">
+        <a href="#" class="detail-link-btn red cancel" title=""><span><i class="ic-cancel"></i></span> Удалить</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+<!--end component profile detail-->
+
+{% endblock %}
