@@ -1,6 +1,8 @@
 
 $(document).ready(function(){
 
+  $('#simpleDrawer').simpleDrawer();
+
   $(".vtip").tipTip({
     defaultPosition: "right",
     maxWidth: '340px',

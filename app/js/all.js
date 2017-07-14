@@ -1,5 +1,5 @@
 
-$(document).ready(function(){$(".vtip").tipTip({defaultPosition:"right",maxWidth:'340px',});$('.chekcer').iCheck({checkboxClass:'icheckbox_flat',radioClass:'iradio_flat',});$('.gallery .bxslider').bxSlider({pagerCustom:'.gallery .bx-pager',captions:true,});$('.selectize').selectize();$('.selectize-grey').selectize();;(function($,window,document,undefined)
+$(document).ready(function(){$('#simpleDrawer').simpleDrawer();$(".vtip").tipTip({defaultPosition:"right",maxWidth:'340px',});$('.chekcer').iCheck({checkboxClass:'icheckbox_flat',radioClass:'iradio_flat',});$('.gallery .bxslider').bxSlider({pagerCustom:'.gallery .bx-pager',captions:true,});$('.selectize').selectize();$('.selectize-grey').selectize();;(function($,window,document,undefined)
 {$('.inputfile').each(function()
 {var $input=$(this),$label=$input.next('label'),labelVal=$label.html();$input.on('change',function(e)
 {var fileName='';if(this.files&&this.files.length>1)

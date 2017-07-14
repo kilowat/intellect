@@ -22,6 +22,18 @@
   font-size: 0;
   padding: 0!important;
 }
+.ic-attach{
+  @include sprite($ic-attach);
+}
+.ic-eye{
+  @include sprite($ic-eye);
+}
+.ic-midifier{
+  @include sprite($ic-midifier);
+}
+.ic-create{
+  @include sprite($ic-create);
+}
 .menu-icon{
   cursor: pointer;
   >*{

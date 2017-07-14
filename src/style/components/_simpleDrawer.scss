@@ -3,7 +3,8 @@
   height: 100%;
   left: 0;
   position: fixed;
-  top: 0;
+  border-right: 1px solid #ccc;
+  top: 98px;
   z-index: 101;
     padding-top: 15px;
 }
@@ -28,18 +29,22 @@
 }
 .drawer-hamburger {
   top: 0px;
-  margin-top: 15px;
+  margin-top: 20px;
   cursor: pointer;
   left: 15px;
   position: fixed;
   background-image: url(../images/ic_open.png);
   z-index: 100;
+  display: none;
+  @include breakpoint(max-width $desktop-width){
+    display: block;
+  }
 }
 
 .drawer-close,
 .drawer-hamburger {
-  width: 24px;
-  height: 24px;
+  width: 44px;
+  height: 44px;
   background-repeat: no-repeat;
 }
 

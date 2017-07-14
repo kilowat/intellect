@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <title></title>
   <!-- libs:css -->
-  <link rel="stylesheet" href="./libs/fancybox/css/jquery.fancybox.css">
   <link rel="stylesheet" href="./libs/bxslider/src/jquery.bxslider.css">
+  <link rel="stylesheet" href="./libs/fancybox/css/jquery.fancybox.css">
   <link rel="stylesheet" href="./libs/msgBox/css/lobibox.min.css">
   <link rel="stylesheet" href="./libs/slick/css/slick.css">
   <!-- endinject -->
@@ -21,6 +21,7 @@
   <header>
     <div class="wrapper">
       <div class="header-row row table">
+        <div class="drawer-hamburger"></div>
         <div class="logo-block table-cell">
           <div class="logo ">
             <a href="/" title="Интеллект-Cервис">
@@ -44,7 +45,65 @@
         </div>
         <div class="user-block table-cell">
           <a href="#" title="Оставить заявку" class="dialog-link"><i class="ic-dialog"></i><span>Оставить заявку</span></a>
-          <a href="#" class="login-link" title="Вход для клиентов"><i class="ic-key"></i><span>Вход для клиентов</span></a>
+          <a href="#" class="login-link" title="Вход для клиентов"><i class="ic-key"></i><em>Вход</em> <span>для клиентов</span></a>
+        </div>
+      </div>
+
+      <div id="simpleDrawer" style="display:none">
+
+        <div id="drawer-scroll-wrapper">
+          <ul>
+            <li><a href="#">menu item1</a></li>
+            <li><a href="#">menu item2</a></li>
+            <li><a href="#">menu item3</a></li>
+            <li><a href="#">menu item4</a></li>
+            <li><a href="#">menu item5</a></li>
+            <li><a href="#">menu item6</a></li>
+            <li><a href="#">menu item7</a></li>
+            <li><a href="#">menu item8</a></li>
+            <li><a href="#">menu item9</a></li>
+            <li><a href="#">menu item10</a></li>
+            <li><a href="#">menu item1</a></li>
+            <li><a href="#">menu item2</a></li>
+            <li><a href="#">menu item3</a></li>
+            <li><a href="#">menu item4</a></li>
+            <li><a href="#">menu item5</a></li>
+            <li><a href="#">menu item6</a></li>
+            <li><a href="#">menu item7</a></li>
+            <li><a href="#">menu item8</a></li>
+            <li><a href="#">menu item9</a></li>
+            <li><a href="#">menu item10</a></li>
+            <li><a href="#">menu item1</a></li>
+            <li><a href="#">menu item2</a></li>
+            <li><a href="#">menu item3</a></li>
+            <li><a href="#">menu item4</a></li>
+            <li><a href="#">menu item5</a></li>
+            <li><a href="#">menu item6</a></li>
+            <li><a href="#">menu item7</a></li>
+            <li><a href="#">menu item8</a></li>
+            <li><a href="#">menu item9</a></li>
+            <li><a href="#">menu item10</a></li>
+            <li><a href="#">menu item1</a></li>
+            <li><a href="#">menu item2</a></li>
+            <li><a href="#">menu item3</a></li>
+            <li><a href="#">menu item4</a></li>
+            <li><a href="#">menu item5</a></li>
+            <li><a href="#">menu item6</a></li>
+            <li><a href="#">menu item7</a></li>
+            <li><a href="#">menu item8</a></li>
+            <li><a href="#">menu item9</a></li>
+            <li><a href="#">menu item10</a></li>
+            <li><a href="#">menu item1</a></li>
+            <li><a href="#">menu item2</a></li>
+            <li><a href="#">menu item3</a></li>
+            <li><a href="#">menu item4</a></li>
+            <li><a href="#">menu item5</a></li>
+            <li><a href="#">menu item6</a></li>
+            <li><a href="#">menu item7</a></li>
+            <li><a href="#">menu item8</a></li>
+            <li><a href="#">menu item9</a></li>
+            <li><a href="#">menu item10</a></li>
+          </ul>
         </div>
       </div>
 
@@ -170,6 +229,176 @@
 
         <h1 class="section-header">Обращение детальная</h1>
 
+        <!--start component support detail-->
+        <div class="support-detail">
+          <div class="ticket-name">
+            <span class="text-light">Заголовок: </span><b>Проблема с доставкой заказа</b>
+          </div>
+          <div class="ticket-level-row">
+            <div class="level-item">
+              ID обращение: 159
+            </div>
+            <div class="level-item level-red">
+              Критичность: высокая
+            </div>
+            <div class="level-item">
+              Уровень поддержки: Стандартная поддержка
+            </div>
+          </div>
+          <div class="ticket-info-row">
+            <div class="info-item">
+              <div class="type-info">
+                <i class="ic-create"></i>Создание обращения:
+              </div>
+              <div class="author-name">
+                Андрей самойлов
+              </div>
+              <div class="date">
+                04.11.2044 12:32:33
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="type-info">
+                <i class="ic-midifier"></i>Последнее изменение:
+              </div>
+              <div class="author-name">
+                Андрей самойлов
+              </div>
+              <div class="date">
+                04.11.2044 12:32:33
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="type-info">
+                <i class="ic-eye"></i>Последний просмотр:
+              </div>
+              <div class="author-name">
+                Андрей самойлов
+              </div>
+              <div class="date">
+                04.11.2044 12:32:33
+              </div>
+            </div>
+          </div>
+
+          <div class="ticket-list">
+            <!--foreach $arResult-->
+            <div class="item question">
+              <div class="top-block">
+                <div class="wrapp-pic">
+                  <div class="pic">
+                    <img src="./images/question-pic.jpg" alt="">
+                  </div>
+                  <div class="name">
+                    <div>
+                      <span class="text-light">Клиент: </span><span>Андрей самойлов</span>
+                    </div>
+                    <div>
+                      <span class="text-light">Дата и время: </span><span>06.03.2017 12:12:22</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="re-quate">
+                  <a href="#" title="">Цитировать</a>
+                </div>
+              </div>
+              <div class="text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </div>
+              <div class="attachments">
+                <div class="attach-h">
+                  <i class="ic-attach"></i>Вложения
+                </div>
+                <div class="attach-list">
+                  <div class="attach-item">
+                    <a href="#" title="">Файл 1.zip (2.2 Мб)</a>
+                  </div>
+                  <div class="attach-item">
+                    <a href="#" title="">Файл 1.zip (2.2 Мб)</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item answer">
+              <div class="top-block">
+                <div class="wrapp-pic">
+                  <div class="pic">
+                    <img src="./images/question-pic.jpg" alt="">
+                  </div>
+                  <div class="name">
+                    <div>
+                      <span class="text-light">Клиент: </span><span>Андрей самойлов</span>
+                    </div>
+                    <div>
+                      <span class="text-light">Дата и время: </span><span>06.03.2017 12:12:22</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="re-quate">
+                  <a href="#" title="">Цитировать</a>
+                </div>
+              </div>
+              <div class="text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </div>
+              <div class="attachments">
+                <div class="attach-h">
+                  <i class="ic-attach"></i>Вложения
+                </div>
+                <div class="attach-list">
+                  <div class="attach-item">
+                    <a href="#" title="">Файл 1.zip (2.2 Мб)</a>
+                  </div>
+                  <div class="attach-item">
+                    <a href="#" title="">Файл 1.zip (2.2 Мб)</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--endforeach-->
+          </div>
+
+          <div class="add-answer-block">
+            <h3>Ответить</h3>
+            <div class="add-answer-form">
+              <textarea class="grey-input" name="name"></textarea>
+              <div class="buttons-row">
+                <button type="submit" class="detail-link-btn close-ticket-btn blue" name="button">Закрыть обращение</button>
+                <button type="submit" class="detail-link-btn answer-ticket-btn blue" name="button">Ответить</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="ticket-rating">
+            <h3>Оцените работу поддержки</h3>
+            <div class="ticket-rating-list">
+              <div class="item">
+                <input type="radio" class="chekcer" name="ticket-rating" checked="checked" value="5">
+                <label for="">Мне все понравилось</label>
+              </div>
+              <div class="item">
+                <input type="radio" class="chekcer" name="ticket-rating" checked="checked" value="4">
+                <label for="">Затрудняюсь ответить</label>
+              </div>
+              <div class="item">
+                <input type="radio" class="chekcer" name="ticket-rating" checked="checked" value="3">
+                <label for="">Не доволен командой поддержки</label>
+              </div>
+              <div class="item">
+                <input type="radio" class="chekcer" name="ticket-rating" checked="checked" value="2">
+                <label for="">Не доволен продуктом</label>
+              </div>
+            </div>
+          </div>
+          <div class="row back-link">
+            <a href="#" title=""><i class="ic-arrow-nav-left"></i>Назад</a>
+          </div>
+        </div>
+        <!--end component support detail-->
 
       </div>
       <div class="push"></div>
@@ -194,9 +423,11 @@
   <script src="./libs/jquery/js/jquery.min.js"></script>
   <!--libs:js-->
 
-  <script src="./libs/fancybox/js/jquery.fancybox.pack.js"></script>
-
   <script src="./libs/bxslider/js/jquery.bxslider.js"></script>
+
+  <script src="./libs/drawer/js/simpleDrawer.js"></script>
+
+  <script src="./libs/fancybox/js/jquery.fancybox.pack.js"></script>
 
   <script src="./libs/formValidator/js/jquery.form-validator.min.js"></script>
 

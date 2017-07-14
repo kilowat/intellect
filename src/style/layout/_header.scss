@@ -1,8 +1,8 @@
 header{
   padding-top: 20px;
-  padding-bottom: 20px;
   @include breakpoint(max-width $desktop-width){
-    padding-top: 10px;
+    padding-top: 0px;
+    border-bottom: 1px solid #ccc;
   }
   .table{
     width: 100%;
@@ -21,6 +21,11 @@ header{
       @include breakpoint(max-width $desktop-width){
          width: 100%;
          box-sizing: border-box;
+         .logo{
+           margin-left: 60px;
+           position: relative;
+           top: 7px;
+         }
       }
       .logo{
         padding-right: 5%;
@@ -46,11 +51,19 @@ header{
               @include breakpoint(max-width $max-width){
                 font-size: 1.1rem;
               }
+              @include breakpoint(max-width 500px){
+                display: inline-block;
+                width: 110px;
+                font-size: 1rem;
+              }
             }
             .logo-slogan{
               font-weight: 100;
               font-size: 0.9rem;
               display: block;
+              @include breakpoint(max-width 500px){
+                display: none;
+              }
             }
           }
         }
@@ -59,18 +72,39 @@ header{
     .search-block{
        width: span(5 at 4 of 12 0);
        @include breakpoint(max-width $desktop-width){
-        display: none;
+        float: none;
+        width: 20px;
+        .search-inputs{
+          position: initial;
+        }
+        input[type=text]{
+          display: none;
+        }
+        .search-btn{
+          position: absolute;
+          right: 100px;
+          top: 28px;
+        }
        }
     }
     .user-block{
       width: span(4 at 5 of 12 last);
       text-align: right;
+      em{
+        font-style: normal;
+      }
       @include breakpoint(max-width $desktop-width){
-        margin-top: 20px;
+        margin-top: 27px;
         width: 80;
         position: absolute;
         top: 0px;
         right: 0px;
+        em{
+          border-bottom: 1px dashed;
+        }
+        .show-on-small-size{
+          display: inline-block;
+        }
       }
       a{
         font-size: 0.9rem;
