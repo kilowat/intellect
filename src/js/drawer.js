@@ -12,6 +12,9 @@
 
     var hamburgerLeft = $(settings.hamburgerClass).position().left;
 
+    if(innerWidth <=1000)
+      self.addClass('is-drawer');
+
     self.css({
       //'width': settings.width + 'px',
       'left': '-' + settings.width + 'px',
@@ -25,6 +28,7 @@
         'left': "0"
       }, settings.animateTime);
 
+      self.addClass('is-drawer');
       isOpen = true;
       $('body').append('<div id="drawer-overlay"></div>');
 
@@ -37,6 +41,7 @@
         'left': "-=" + settings.width
       }, settings.animateTime, function () {
         $('#drawer-overlay').remove();
+        self.removeClass('is-drawer');
       });
 
       $(settings.hamburgerClass).toggleClass('drawer-close');

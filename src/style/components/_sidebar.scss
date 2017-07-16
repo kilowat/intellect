@@ -5,6 +5,18 @@ aside{
   float: left;
   width: 23%;
   padding-right: 2%;
+  &.is-drawer{
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    z-index: 101;
+    width: 264px;
+    padding-left: 15px;
+    padding-right: 0;
+    top: 88px;
+    border-right: 1px solid #ccc;
+    padding-top: 10px;
+  }
   .left-menu{
     ul{
       list-style: none;

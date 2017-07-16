@@ -1,7 +1,7 @@
 .bx-breadcrumb{
   font-size: 0.95rem;
   margin-top: 0px;
-  @include breakpoint(max-width $middle-width){
+  @include breakpoint(max-width $desktop-width){
     display: none;
   }
   .bx-breadcrumb-item {

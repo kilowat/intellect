@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
 
-  $('#simpleDrawer').simpleDrawer();
+  $('aside').simpleDrawer();
 
   $(".vtip").tipTip({
     defaultPosition: "right",

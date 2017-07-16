@@ -1,10 +1,10 @@
 #simpleDrawer {
   background: #fff none repeat scroll 0 0;
-  height: 100%;
   left: 0;
-  position: fixed;
+  position: absolute;
   border-right: 1px solid #ccc;
-  top: 98px;
+  background-color: #fff;
+  top: 88px;
   z-index: 101;
     padding-top: 15px;
 }
@@ -31,8 +31,8 @@
   top: 0px;
   margin-top: 20px;
   cursor: pointer;
-  left: 15px;
-  position: fixed;
+  left: 0px;
+  position: absolute;
   background-image: url(../images/ic_open.png);
   z-index: 100;
   display: none;
@@ -53,11 +53,11 @@
 }
 
 #drawer-overlay {
-  background-image: url(../images/overlay.png);
-  height: 100%;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index:2;
+  //background-image: url(../images/overlay.png);
+  //height: 100%;
+//  left: 0;
+  //position: fixed;
+  //top: 0;
+//  width: 100%;
+  //z-index:2;
 }
